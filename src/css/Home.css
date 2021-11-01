@@ -23,7 +23,7 @@ html, body{
     width: 100%;
     max-width: 1900px;
     min-height: 700px;
-    background: rgb(2, 2, 2);
+    background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     box-shadow: rgba(0, 0, 0, 0.1);
@@ -42,7 +42,7 @@ html, body{
 
 .container .meio{
     position: relative;
-    background: rgba(197, 240, 7, 0.678);
+    background: rgba(197, 240, 7, 0);
     padding: 3%;
 }
 

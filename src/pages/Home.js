@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import '../css/Home.css';
+import PostList from '../components/feed/PostList';
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
           <h1>mine Perfil</h1>
         </div>
         <div className="meio">
-        <h1>Feed</h1>
+        <PostList />
         </div>
         <div className="direita">
         <h1>5 amigos ou mas 0.0</h1>

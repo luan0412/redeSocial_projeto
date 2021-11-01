@@ -6,6 +6,9 @@ import Login from './pages/Login';
 import Amigos from './pages/Amigos';
 import Cadastro from './pages/Cadastro';
 
+
+
+
 function App() {
   return (
     <>
