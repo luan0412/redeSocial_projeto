@@ -39,7 +39,6 @@ function Cadastro(props) {
             <div className="container">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
-                    <h1>Dados: {props.nome}</h1>
                 </div>
                 <div className="cadastro">
                     <form action="" id="form" onSubmit={handleSubmit(handleCadastro)}>

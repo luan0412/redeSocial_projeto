@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Amigos.css';
 
 function Amigos() {
   return (
