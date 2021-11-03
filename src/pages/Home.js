@@ -15,7 +15,7 @@ function Home() {
         <PostList />
         </div>
         <div className="direita">
-        <h1>5 amigos ou mas 0.0</h1>
+        <h1>5 amigos ou mais 0.0</h1>
         </div>
       </div>
     </div>

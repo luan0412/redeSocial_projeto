@@ -11,7 +11,8 @@ import Cadastro from './pages/Cadastro';
 
 function App() {
   return (
-    <>
+    <div className="App">
+    
       <Router>
         <Switch>
           <Route path='/Login' component={Login} />
@@ -20,7 +21,8 @@ function App() {
           <Route path='/Amigos' component={Amigos} />
         </Switch>
       </Router>
-    </>
+    
+    </div>
   );
 }
 
