@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import '../css/Home.css';
 import PostList from '../components/feed/PostList';
+import Perfil from './Perfil'
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
       <Navbar />
       <div className="container">
         <div className="esquerda">
-          <h1>mine Perfil</h1>
+          <Perfil/>
         </div>
         <div className="meio">
         <PostList />

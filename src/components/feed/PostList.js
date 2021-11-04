@@ -110,7 +110,7 @@ export default function PostList() {
 
     return (
       <div className="postlist">
-        {/* Mapear posts para cada item */}
+        {}
         { posts.map(post => (
           <PostItem key={ post.id } { ...post } />
         ))}
