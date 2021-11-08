@@ -5,3 +5,6 @@ body{
     width: 500px;
     background: red;
 }
+#imagemModal{
+    cursor: pointer;
+}

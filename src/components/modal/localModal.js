@@ -1,21 +1,17 @@
 import React from "react";
 
 
-const LocalModal = ({ props,id = "idModal", onClose = () => { } }) => {
-    const handleOutSideClick = (e) => {
-        if (e.target.id === id) onClose();
+const LocalModal = ({id = "modelo",onClose = () => {}, children }) => {
+    const handleOutsideClick = (e) => {
+        if(e.target.id === id) onClose();
     }
-    console.log(props)
-    return (
-        <div id={id} className="mainModal" onClick={handleOutSideClick}>
-            <div className="container"> <h1> oi </h1>
-                <button className="close" onClick={onClose} />
-                <div className="content">   </div>
-
-
+    return <div id={id} className="mainModal" onClick={handleOutsideClick}>
+        <div className="container"> 
+            <button className="close" onClick={onClose}></button>
+            <div className="content"> {children}
             </div>
         </div>
-    );
+    </div>
 };
 
 export default LocalModal

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Amigos.css';
-import Modal from '../components/modal/Modal.js';
+import LocalModal from '../components/modal/localModal.js';
 import RandomUserApi from "../services/RandomUserApi";
 
-function Amigos(){
-      const [itemSelecionado,setItemSelecionado] = useState(false);
-      const [dados,setDados] = useState([]);
+function Amigos() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [user, setUser] = useState(null)
+  const [dados, setDados] = useState([]);
 
 
   useEffect(() => {
@@ -14,42 +15,41 @@ function Amigos(){
     let url = "?results=10&seed=3"
 
     RandomUserApi.get(url)
-    .then((response) =>{
-        if(response.status >= 200 && response.status < 300  ){
+      .then((response) => {
+        if (response.status >= 200 && response.status < 300) {
           setDados(response.data.results);
-            }else{
+        } else {
           setDados([]);
         }
-    })
-    .catch((error) =>{
-      setDados([]);
-    });
+      })
+      .catch((error) => {
+        setDados([]);
+      });
+  }, []);
 
-  },[]);
-
-  const ola = () => {
-    setItemSelecionado("oi");
+  const setUsuarioEspecifico = (user) =>{
+    setIsModalVisible(true)
+    setUser(user)
   }
-  
-  return(
-    
-  
-    <div>
-      
-      
-      {dados.map(
-          (item,index) =>{
-              return <div key={index}>
-                        <div> <h5>{item.login.username}</h5> </div>
-                        <div> <img onClick={ ola} src ={item.picture.medium} alt= {item.name.first} /> </div>
-                       
-                    </div>
-          
-          }
-      )
-          }
 
-          {itemSelecionado  ? <Modal> <h1>oi</h1> </Modal> : null}
+  return (
+
+
+    <div>
+
+
+      {dados.map(
+        (item, index) => {
+          return <div key={index}>
+            <div> <h5>{item.login.username}</h5> </div>
+            <div> <img id="imagemModal" onClick={() => setUsuarioEspecifico(item)} src={item.picture.medium} alt={item.name.first} /> </div>
+            {isModalVisible ? (<LocalModal onClose={() => setIsModalVisible(false)}>{user.login.username} {user.location.country}  </LocalModal>) : null}
+          </div>
+
+        }
+      )
+      }
+
 
     </div>
 
