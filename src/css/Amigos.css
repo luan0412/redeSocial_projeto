@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+.open{
+    width: 500px;
+    background: red;
+}
+#imagemModal{
+    cursor: pointer;
+}

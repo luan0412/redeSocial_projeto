@@ -2,8 +2,12 @@ import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import '../css/Home.css';
 import PostList from '../components/feed/PostList';
+<<<<<<< HEAD
 import Coment from '../components/feed/FeedComent';
 import EditPost from '../components/feed/EditPost';
+=======
+import Perfil from './Perfil'
+>>>>>>> 676cb73211ef80151d46e85ee9adacf4a6c43d91
 
 function Home() {
   return (
@@ -11,7 +15,7 @@ function Home() {
       <Navbar />
       <div className="container">
         <div className="esquerda">
-          <h1>mine Perfil</h1>
+          <Perfil/>
         </div>
         <div className="meio">
         <Coment />

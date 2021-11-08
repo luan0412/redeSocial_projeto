@@ -34,9 +34,71 @@ html, body{
 
 .container .esquerda{
     position: relative;
-    background: rgba(0, 0, 255, 0.658);
+    background: white;
     padding: 3%;
 }
+
+.foto1{
+    width: 230px;
+    height: 100px;
+    margin-left: 95px;
+   
+}
+
+.foto1 img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: rgb(117, 114, 114);
+    border-radius: 100%;
+}
+
+.master{
+    margin-top: 20px;
+    border-radius: 9px;
+    background: white;
+    padding: 20px;
+    color: #3E3E3E;
+    line-height: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 500px;
+    
+}
+
+.nome1{
+    font-size: 30px;
+    margin-top: 210px;
+    margin-left: 95px;
+}
+
+.nome2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.link{
+    font-size: 20px;
+    padding-top: 25px;
+    
+    
+}
+
+.link a{
+    text-decoration: none;
+   
+}
+
+a:hover{
+    color: black;
+}
+
+.nome3{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
 
 /* =========================================================< Meio >============================================ */
 
