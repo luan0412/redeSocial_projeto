@@ -11,7 +11,7 @@ export default function Perfil() {
         </div>
 
         <div className="nome1">
-             <h3>Rafaela Soares</h3>
+            <h3>Rafaela Soares</h3>
         </div>
 
         <div className="nome2">

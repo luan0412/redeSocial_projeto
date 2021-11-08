@@ -96,8 +96,11 @@ body {
   margin-right: 6px;
 }
 #img01{
-  width: 500px;
-  height: 500px;
+  margin-top: 3%;
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+
   
 }
 textarea {

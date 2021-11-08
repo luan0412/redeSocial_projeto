@@ -38,10 +38,26 @@ html, body{
     padding: 3%;
 }
 
+.master{
+    margin-top: 20px;
+    border-radius: 9px;
+    background: white;
+    padding: 3%;
+    color: #3E3E3E;
+    line-height: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
 .foto1{
-    width: 230px;
-    height: 100px;
-    margin-left: 95px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
    
 }
 
@@ -53,23 +69,10 @@ html, body{
     border-radius: 100%;
 }
 
-.master{
-    margin-top: 20px;
-    border-radius: 9px;
-    background: white;
-    padding: 20px;
-    color: #3E3E3E;
-    line-height: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    width: 500px;
-    
-}
-
 .nome1{
     font-size: 30px;
-    margin-top: 210px;
-    margin-left: 95px;
+    margin-top: 3%;
+    text-align: center;
 }
 
 .nome2{

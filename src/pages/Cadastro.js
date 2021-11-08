@@ -267,13 +267,9 @@ function Cadastro(props) {
                             
                         
                         <div id="link">
-<<<<<<< HEAD
-                        <Link to="/Login">
-                            <a href="#" >Já tem uma conta?</a>
-                        </Link> 
-=======
-                             <a href="/Login">Já tem uma conta?</a>
->>>>>>> 676cb73211ef80151d46e85ee9adacf4a6c43d91
+                            <Link to="/Login">
+                               <a href="/Login">Já tem uma conta?</a>
+                            </Link>
                         </div>
                        
                     </form>

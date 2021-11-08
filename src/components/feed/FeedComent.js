@@ -36,7 +36,7 @@ function Coment() {
         <div className="post-header">
             <img className="avatar" src={ avata } />
             <div className="details">
-                <span>Joao da nica</span>
+                <span>Avatar temporário</span>
                 <span>23:67</span>
             </div>
         </div>
