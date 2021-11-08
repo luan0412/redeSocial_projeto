@@ -15,7 +15,7 @@ export default function PostList() {
           avatar: 'https://randomuser.me/api/portraits/women/37.jpg'
         },
         date: '28 Mai 2020',
-        content: 'Pessoal, alguém sabe se a TecWorld está contratando?',
+        content: 'Pessoal, alguém sabe se a Accenture está contratando?',
         comments: [
           {
             id: 2,
@@ -25,7 +25,7 @@ export default function PostList() {
             },
             date: '28 Mai 2020',
             content:
-              'A TecWorld está sempre em busca de novos talentos, geralmente ficam de olho em quem se destaca no Github, inclusive grande parte do time deles é composto por jovens talentos. Você pode encontrar um formulário de novos talentos no site da empresa'
+              'A Accenture está sempre em busca de novos talentos, geralmente ficam de olho em quem se destaca no Github, inclusive grande parte do time deles é composto por jovens talentos. Você pode encontrar um formulário de novos talentos no site da empresa'
           }
         ]
       },
@@ -37,7 +37,7 @@ export default function PostList() {
         },
         date: '27 Mai 2020',
         content:
-          'Fala galera, beleza?\nEstou fazendo o curso gratuito da DevCity de desenvolvimento e está sendo muito massa! Alguém aí mais fazendo? Comenta na publicação para trocarmos uma idéia e infos',
+          'Fala galera, beleza?\nEstou fazendo o curso gratuito da Start de desenvolvimento e está sendo muito massa! Alguém aí mais fazendo? Comenta na publicação para trocarmos uma idéia e infos',
         comments: [
           {
             id: 4,
@@ -47,7 +47,7 @@ export default function PostList() {
             },
             date: '27 Mai 2020',
             content:
-              'Também estou fazendo o curso e estou adorando! Estou no segundo módulo sobre React e estou ansiosa para o próximo sobre React Native'
+              'Também estou fazendo o curso e estou adorando! Estou no módulo sobre React e estou ansiosa para o próximo sobre React Docker'
           },
           {
             id: 5,
@@ -102,10 +102,23 @@ export default function PostList() {
           avatar: 'https://randomuser.me/api/portraits/men/13.jpg'
         },
         date: '26 Mai 2020',
-        content: <img src={bolo} /> 
+        content: 'Poxa vida, ont',
+        img_post: <img src={bolo} id="img01"/>
         ,
-        comments: []
-      }
+        comments: [
+          {
+            id: 5,
+            author: {
+              name: 'João Santos',
+              avatar: 'https://randomuser.me/api/portraits/men/25.jpg'
+            },
+            date: '26 Mai 2020',
+            content:
+              'Poxa vida, ontem mesmo estava com duas vagas abertas aqui onde trabalho. Na próxima encaminho elas antes!'
+          }
+        ]
+      },
+      
     ])
 
     return (

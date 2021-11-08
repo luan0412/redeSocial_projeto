@@ -2,11 +2,37 @@ import React from 'react';
 import '../css/Login.css';
 import Video from './videofull.mp4'
 
+import { useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
+
+const  validar = yup.object().shape({
+  email: yup.string().email('O campo e-mail é inválido')
+  .required('O campo e-mail é obrigatório'),
+  senha: yup.string().required('O campo senha é obrigatório')
+})
+
 
 
 
 
 export default function Login (){
+
+  const { register, handleSubmit,formState: { errors } } = useForm({
+    resolver: yupResolver(validar)
+  })
+
+  let history = useHistory()
+    
+  function handleLogin(data){
+    console.log(data)
+    history.push("/")
+    
+  }
+
 
   return (<div>
   
@@ -34,25 +60,29 @@ export default function Login (){
   
   
   
-  <form>
+  <form onSubmit={handleSubmit(handleLogin)}>
      
      <h3 className="logo2">L O G I N </h3>
   
   
      <div className = "campoemail"  >
-     <input type ="text" placeholder ="E-mail" />
+     <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
+     <span>{errors.email?.message}</span>
      </div>
   
      <div className="camposenha">
-     <input type ="password" placeholder = "Senha" />
+     <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
+     <span>{errors.senha?.message}</span>
      </div>
-    <button className="botaoentrar">Entrar</button>
+    <button className="botaoentrar" type="submit">Entrar</button>
   
     <div className="linhahorizontal"> </div>   
     
   
     <div>
-     <button className ="botacadastro">Cadastrar</button>
+      <Link to="/Cadastro">
+        <button className ="botacadastro" >Cadastrar</button>
+      </Link>
     </div>
   </form>
   

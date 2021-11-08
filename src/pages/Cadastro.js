@@ -1,11 +1,16 @@
 import React from 'react';
 import '../css/Cadastro.css';
 import Videofull from '../source/videofull.mp4';
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
-import { useState } from 'react';
-import { connect } from "react-redux";
+
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+//import { useState } from 'react';
+
+import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+//import { connect } from "react-redux";
 //import updateAction from "./actions";
 
 const  schema = yup.object().shape({
@@ -26,10 +31,13 @@ function Cadastro(props) {
     const { register, handleSubmit,formState: { errors } } = useForm({
         resolver: yupResolver(schema)
       })
+
+      let history = useHistory()
     
       //const handleCadastro = data => props.updateAction(data);
       function handleCadastro(data){
         console.log(data)
+        history.push("/")
         
       }
 
@@ -42,7 +50,7 @@ function Cadastro(props) {
                 </div>
                 <div className="cadastro">
                     <form action="" id="form" onSubmit={handleSubmit(handleCadastro)}>
-                        <h1>Criar uma nova conta</h1>
+                        <h1>Nova Conta</h1>
                         <fieldset>
                             <input type="text" name="nome" placeholder="Nome" id="nome" {...register('nome') } />
                             <span>{errors.nome?.message}</span>
@@ -259,7 +267,9 @@ function Cadastro(props) {
                             
                         
                         <div id="link">
-                             <a href="">Já tem uma conta?</a>
+                        <Link to="/Login">
+                            <a href="#" >Já tem uma conta?</a>
+                        </Link> 
                         </div>
                        
                     </form>

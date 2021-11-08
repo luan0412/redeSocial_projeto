@@ -15,6 +15,8 @@ function PostHeader({ author, date }) {
   );
 }
 
+
+
 function PostComments({ comments }) {
   return (
     <div className="post-comments">
@@ -33,11 +35,12 @@ function PostComments({ comments }) {
   );
 }
 
-function PostItem({ author, date, content, comments }) {
+function PostItem({ author, date, content, comments, img_post }) {
   return (
     <div className="post">
       <PostHeader author={ author } date={ date } />
       <p className="post-content">{ content }</p>
+      <p className="post-img">{ img_post }</p>
       <PostComments comments={ comments } />
     </div>
   );
