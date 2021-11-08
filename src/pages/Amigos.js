@@ -1,58 +1,60 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/Amigos.css';
-import 'bootstrap';
+import Modal from '../components/modal/Modal.js';
+import RandomUserApi from "../services/RandomUserApi";
+
+function Amigos(){
+      const [itemSelecionado,setItemSelecionado] = useState(false);
+      const [dados,setDados] = useState([]);
 
 
-class Amigos extends Component {
-  constructor(props){
-    super(props)
-      this.state ={ 
-        items:[],
-        loading:false
+  useEffect(() => {
+    // Atualiza o titulo do documento usando a API do browser 
+    document.title = 'Amigos';
+    let url = "?results=10&seed=3"
+
+    RandomUserApi.get(url)
+    .then((response) =>{
+        if(response.status >= 200 && response.status < 300  ){
+          setDados(response.data.results);
+            }else{
+          setDados([]);
+        }
+    })
+    .catch((error) =>{
+      setDados([]);
+    });
+
+  },[]);
+
+  const ola = () => {
+    setItemSelecionado("oi");
   }
-}
-componentDidMount(){
-    fetch("https://randomuser.me/api/?results=200&registered=upper,lower,18-80")
-    .then((Response) => Response.json()).then((Response) => {
-      this.setState({
-        items:Response.results, 
-        loading: true
-      })
-    })  
-}
-render(){
-
-  let {items,loading} = this.state 
-
-    if(!loading){
-      return(
-        <div>
-          Loading...
-        </div>
+  
+  return(
+    
+  
+    <div>
+      
+      
+      {dados.map(
+          (item,index) =>{
+              return <div key={index}>
+                        <div> <h5>{item.login.username}</h5> </div>
+                        <div> <img onClick={ ola} src ={item.picture.medium} alt= {item.name.first} /> </div>
+                       
+                    </div>
+          
+          }
       )
-    }
+          }
 
-    else{
+          {itemSelecionado  ? <Modal> <h1>oi</h1> </Modal> : null}
 
-
-  return (
-    <div className='amigos'>
-     <React.Fragment>
-      <h1>Amigos</h1>
-        {items.map(item =>( 
-             <div> <h1> {item.name.first} </h1>
-              <p> {item.name.last} </p>
-              <p> {item.login.username} </p>
-              <p> {item.registered.age} </p>
-              <p> {item.location.country} </p>
-              <img src ={item.picture.medium} alt= {item.name.first} /> </div>
-
-        ))}
-        </React.Fragment>
     </div>
-  );
-}
-}
-}
 
-export default Amigos;
+  );
+
+
+};
+export default Amigos
