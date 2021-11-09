@@ -13,7 +13,7 @@ function Amigos() {
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
     document.title = 'Amigos';
-    let url = "?results=10&seed=5"
+    let url = "?results=50&seed=5"
 
     RandomUserApi.get(url)
       .then((response) => {
@@ -28,7 +28,7 @@ function Amigos() {
       });
   }, []);
 
-  const setUsuarioEspecifico = (user) => { 
+  const setUsuarioEspecifico = (user) => {
     setIsModalVisible(true)
     setUser(user)
   }
@@ -37,23 +37,26 @@ function Amigos() {
 
 
     <div id="master">
-
+      <h1 id="titulo">Amigos </h1>
+      <div className="mainDiv">
 
       {dados.map(
         (item, index) => {
           return <div key={index}>
-            <div> <h5>{item.login.username}</h5> </div>
-            <div> <img id="imagemModal" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
+              <div className="mestreDiv"> 
+            <div className="usuariosDiv"> <p id="usuarios">{item.login.username}</p></div>
+            <div className="imagensDiv"> <img id="imagens" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
+            </div>
             {isModalVisible ? (
               <LocalModal onClose={() => setIsModalVisible(false)}>
-                 <p id="nome">Nome: {user.name.first}</p> <p id="sobrenome"> Sobrenome: {user.name.last}</p> <p id="idade"> Idade: {user.registered.age}</p> <p id="pais"> País: {user.location.country}</p> <p id="usuario"> Usuário:{user.login.username} <img src ={user.picture.large} alts= {user.name.first} /> </p>
+               <div className="imagemModalDiv"><img id="imagemModal" src={user.picture.large} alts={user.name.first} /></div>  <div className="textos"><p id="nome">Nome: {user.name.first}</p> <p id="sobrenome"> Sobrenome: {user.name.last}</p> <p id="idade"> Idade: {user.registered.age}</p> <p id="pais"> País: {user.location.country}</p> <p id="usuario"> Usuário: {user.login.username}  </p> </div> 
               </LocalModal>) : null}
           </div>
 
         }
       )
       }
-
+              </div>
 
     </div>
 
