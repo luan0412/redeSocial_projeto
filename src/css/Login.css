@@ -2,7 +2,7 @@
 
 body{ 
   
-    background-color: whitesmoke;
+    background-color:gainsboro;
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
@@ -14,12 +14,14 @@ body{
  
  
  .main{
-    display: flex;
-    width: 100%;
-    background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
-     background-size: 400% 400%;
-     animation: gradient 15s ease infinite;
-    margin-top: 6%; 
+   display: flex;
+   width: 100%;
+   background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
+   background-size: 400% 400%;
+   animation: gradient 15s ease infinite;
+   border-radius: 1%;
+   margin-top: 2%;
+   
     
     
  
@@ -30,7 +32,8 @@ body{
  
  
  video{
-    width: 60%;
+    width: 70%;
+ 
    
     
  
@@ -107,6 +110,12 @@ body{
  }
  
  
+
+ header{
+    width: 1%;
+   
+ 
+ }
  
  .logo1{
  
@@ -115,7 +124,11 @@ body{
     font-family: 'Rampart One', cursive;
     font-size: 40px;
     margin: 0 auto;
-    margin-right: 95%;
+    text-align: start;
+    background-color: gainsboro;
+    width: 100%;
+    padding: 1%;
+    
  
  
  
@@ -135,13 +148,29 @@ body{
  
  
  .linklogo{
- 
+
   text-decoration: none;
+  
  
  }
  
+
+
+ .footer{
+ 
+    height: 9vh;
+    background-color:gainsboro;
+ }
  
  
+ .copy{
+   position: absolute;
+   bottom: 1%;
+   right: 44%;
+   
+ }
+
+
  
  
  
@@ -186,6 +215,12 @@ body{
        margin-top: 30%;
       
     }
+    header{
+       display: none;
+    }
+    .footer{
+       display: none;
+    }
  }
  
  
@@ -194,6 +229,10 @@ body{
         
        margin-bottom: 1%;
       
+    }
+
+    .main{
+       margin-top: 15%;
     }
  }
  

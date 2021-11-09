@@ -25,7 +25,8 @@ export default function Login (){
   
   <div className ="main">
   
-  
+      
+    
       <video  autoPlay loop muted > 
     
         <source className="video1"  src= {Video} type="video/mp4"/>
@@ -55,8 +56,17 @@ export default function Login (){
      <button className ="botacadastro">Cadastrar</button>
     </div>
   </form>
+
+   
   
   </div>
+
+
+  <div className="footer">
+      
+      <h5 className="copy">Desenvolvido por Bruno Amorim</h5>
+
+    </div>
   
   
   
