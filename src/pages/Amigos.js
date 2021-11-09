@@ -36,7 +36,7 @@ function Amigos() {
   return (
 
 
-    <div>
+    <div id="master">
 
 
       {dados.map(
