@@ -1,58 +1,60 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/Amigos.css';
-import 'bootstrap';
+import LocalModal from '../components/modal/localModal.js';
+import RandomUserApi from "../services/RandomUserApi";
+
+function Amigos() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [user, setUser] = useState(null)
+  const [dados, setDados] = useState([]);
 
 
-class Amigos extends Component {
-  constructor(props){
-    super(props)
-      this.state ={ 
-        items:[],
-        loading:false
-  }
-}
-componentDidMount(){
-    fetch("https://randomuser.me/api/?results=200&registered=upper,lower,18-80")
-    .then((Response) => Response.json()).then((Response) => {
-      this.setState({
-        items:Response.results, 
-        loading: true
+  useEffect(() => {
+    // Atualiza o titulo do documento usando a API do browser 
+    document.title = 'Amigos';
+    let url = "?results=10&seed=3"
+
+    RandomUserApi.get(url)
+      .then((response) => {
+        if (response.status >= 200 && response.status < 300) {
+          setDados(response.data.results);
+        } else {
+          setDados([]);
+        }
       })
-    })  
-}
-render(){
+      .catch((error) => {
+        setDados([]);
+      });
+  }, []);
 
-  let {items,loading} = this.state 
-
-    if(!loading){
-      return(
-        <div>
-          Loading...
-        </div>
-      )
-    }
-
-    else{
-
+  const setUsuarioEspecifico = (user) =>{
+    setIsModalVisible(true)
+    setUser(user)
+  }
 
   return (
-    <div className='amigos'>
-     <React.Fragment>
-      <h1>Amigos</h1>
-        {items.map(item =>( 
-             <div> <h1> {item.name.first} </h1>
-              <p> {item.name.last} </p>
-              <p> {item.login.username} </p>
-              <p> {item.registered.age} </p>
-              <p> {item.location.country} </p>
-              <img src ={item.picture.medium} alt= {item.name.first} /> </div>
 
-        ))}
-        </React.Fragment>
+
+    <div id="master">
+
+
+      {dados.map(
+        (item, index) => {
+          return <div key={index}>
+            <div> <h5>{item.login.username}</h5> </div>
+            <div> <img id="imagemModal" onClick={() => setUsuarioEspecifico(item)} src={item.picture.medium} alt={item.name.first} /> </div>
+            {isModalVisible ? (<LocalModal onClose={() => setIsModalVisible(false)}>{user.login.username} {user.location.country}  </LocalModal>) : null}
+          </div>
+
+        }
+      )
+      }
+
+
     </div>
-  );
-}
-}
-}
 
-export default Amigos;
+  );
+
+
+};
+export default Amigos
