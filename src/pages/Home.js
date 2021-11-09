@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import '../css/Home.css';
 import PostList from '../components/feed/PostList';
+import Coment from '../components/feed/FeedComent';
+import EditPost from '../components/feed/EditPost';
+import Perfil from './Perfil'
 
 function Home() {
   return (
@@ -9,9 +12,11 @@ function Home() {
       <Navbar />
       <div className="container">
         <div className="esquerda">
-          <h1>mine Perfil</h1>
+          <Perfil/>
         </div>
         <div className="meio">
+        <Coment />
+        <EditPost />
         <PostList />
         </div>
         <div className="direita">

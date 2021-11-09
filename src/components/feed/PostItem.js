@@ -2,7 +2,6 @@ import React from 'react';
 import './Feed.css';
 
 
-// Desestruturar props (obter apenas as propriedades necessárias)
 function PostHeader({ author, date }) {
   return (
     <div className="post-header">
@@ -15,16 +14,18 @@ function PostHeader({ author, date }) {
   );
 }
 
+
+
 function PostComments({ comments }) {
   return (
     <div className="post-comments">
       <div className="divider" />
-      {/* Mapear comments para cada item */}
+      {}
       { comments.map(comment => (
         <div key={ comment.id } className="comment">
           <img className="avatar" src={ comment.author.avatar } />
           <p>
-            <span>{ comment.author.name }</span>
+            <span>{ comment.author.name }:</span>
             { comment.content }
           </p>
         </div>
@@ -33,11 +34,12 @@ function PostComments({ comments }) {
   );
 }
 
-function PostItem({ author, date, content, comments }) {
+function PostItem({ author, date, content, comments, img_post }) {
   return (
     <div className="post">
       <PostHeader author={ author } date={ date } />
       <p className="post-content">{ content }</p>
+      <p className="post-img">{ img_post }</p>
       <PostComments comments={ comments } />
     </div>
   );

@@ -10,17 +10,18 @@
 html,
 body,
 #root {
-  height: 100%
+  height: 100%;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #F2F2F2;
+  
 }
 
 .postlist {
   width: 700px;
-  margin: 0 auto 20px
+  margin: 0 auto;
 }
 
 .post {
@@ -30,68 +31,124 @@ body {
   padding: 20px;
   color: #3E3E3E;
   line-height: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .post-header .details {
   margin-left: 5%;
   display: flex;
   flex-direction: column;
-  font-size: 11px;
+  font-size: 14px;
   color: #9A9A9A;
-  line-height: 14px
+  line-height: 14px;
 }
 
-/* primeiro elemento do <span> */
 .post-header .details span:first-child {
-  font-size: 14px;
+  font-size: 20px;
   color: #4A4A4A;
   font-weight: bold;
-  margin-bottom: 3px
+  margin-bottom: 6%;
 }
 
 .avatar {
   width: 100%;
-  max-width: 50px;
+  max-width: 60px;
   height: 100%;
-  max-height: 50px;
-  border-radius: 50%
+  max-height: 60px;
+  border-radius: 50%;
 }
 
 .post-content {
   margin-top: 15px;
-  font-size: 14px
+  font-size: 17px;
 }
 
 .divider {
   width: 100%;
   height: 1px;
-  background: #EEE
+  background: #EEE;
 }
 
 .post-comments {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .comment {
   margin-top: 20px;
-  display: flex
+  display: flex;
 }
 
 .comment p {
   border-radius: 19px;
   background: #EEE;
-  margin-left: 15px;
+  margin-left: 3%;
   padding: 15px;
-  font-size: 13px
+  font-size: 15px;
 }
 
 .comment span {
   font-weight: bold;
-  margin-right: 6px
+  margin-right: 6px;
+}
+#img01{
+  margin-top: 3%;
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+
+  
+}
+textarea {
+  width: 100%;
+  height: 15vh;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+textarea::placeholder{
+  font: 400 15px/18px Arial, sans-serif;
+  color: #3f4142d8;
+}
+
+.err{
+  color: crimson;
+}
+
+.form{
+  margin-top: 5%;
+}
+
+.butoes{
+  margin-top: -6%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form button{
+  cursor: pointer;
+  width: 10%;
+  border-radius: 5px;
+  border: none;
+  background-color: #22a508;
+  color: #fff;
+  margin: 1%;
+  padding: 5px;
+  font-size: 18px;
+}
+
+#butt-edit{
+  background-color: #3030e4;
+}
+
+#butt-delet{
+  background-color: #e72d2d;
 }

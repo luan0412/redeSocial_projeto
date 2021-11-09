@@ -6,9 +6,7 @@ body{
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
-    
-    
-   
+      
  }
  
  
@@ -27,10 +25,6 @@ body{
  
  }
  
- 
- 
- 
- 
  video{
     width: 70%;
  
@@ -41,16 +35,13 @@ body{
  }
  
  
- form{
- 
-   
+ form{  
     position: relative;
     width: 100%;
     margin-top: 10%;
+   
   
-    
  }
- 
  
  input{
     width: 64%;
@@ -59,20 +50,19 @@ body{
     margin-bottom: 2%;
     background-color: whitesmoke;
     border: none;
+    left: 20%;
  }
- 
- 
- 
- 
+
  .botaoentrar{
     width: 64%;
     padding: 2%;
     font-size: 14px;
     border: none;
     cursor: pointer;
- 
+    position: relative;
+    left: 20%;
+    margin-top: 4%;
  }
- 
  
  .botacadastro{
    width: 30%;
@@ -83,9 +73,9 @@ body{
    border: none;
    cursor: pointer;
    font-size: 14px;
- 
+   position: relative;
+   left: 37%;
  }
- 
  
  .linhahorizontal{
     width: 80%;
@@ -93,9 +83,6 @@ body{
     margin-top: 8%;
     margin-left:10%;
  }
- 
- 
- 
  
  @keyframes gradient {
      0% {
@@ -135,17 +122,15 @@ body{
  
  }
  
- 
- 
  .logo2{
     color: black;
     font-family: 'Lobster', cursive;
     font-family: 'Rampart One', cursive;
-    font-size: 40px;
-    margin-top: -10%;
+    font-size: 49px;
+    margin-top: -15%;
     padding-bottom: 5%;
+    margin-left: 31%;
  }
- 
  
  .linklogo{
 
@@ -171,6 +156,13 @@ body{
  }
 
 
+
+
+
+ span{
+    margin: 20%;
+
+ }
  
  
  
