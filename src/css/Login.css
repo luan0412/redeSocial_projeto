@@ -129,7 +129,7 @@ body{
     font-size: 49px;
     margin-top: -15%;
     padding-bottom: 5%;
-    margin-left: 31%;
+    text-align: center;
  }
  
  .linklogo{
@@ -161,6 +161,8 @@ body{
 
  span{
     margin: 20%;
+    color: white;
+   
 
  }
  
@@ -179,7 +181,9 @@ body{
         
        margin-top: 25%;
       
+
     }
+    
  }
  
  
@@ -204,7 +208,7 @@ body{
  @media  (max-width:768px){
     .main{ 
         
-       margin-top: 30%;
+       margin-top: 0%;
       
     }
     header{
