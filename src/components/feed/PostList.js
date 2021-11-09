@@ -73,7 +73,7 @@ export default function PostList() {
           {
             id: 12,
             author: {
-              name: 'Luan',
+              name: 'Luan Felipe',
               avatar: luan
             },
             date: '08 Nov 2021',
@@ -103,7 +103,7 @@ export default function PostList() {
           {
             id: 4,
             author: {
-              name: 'Philipe',
+              name: 'Philipe Lima',
               avatar: philipe
             },
             date: '08 Nov 2021',
