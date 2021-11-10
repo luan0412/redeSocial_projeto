@@ -61,18 +61,18 @@ export default function Login (){
   
   
   
-  <form onSubmit={handleSubmit(handleLogin)}>
+  <form id="formLogin" onSubmit={handleSubmit(handleLogin)}>
      
      <h3 className="logo2">L O G I N </h3>
   
-     <div> <span>{errors.email?.message}</span> </div>
+     <div> <span className="span">{errors.email?.message}</span> </div>
      <div className = "campoemail"  >
      <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
     
      </div>
   
      <div className="camposenha">
-     <div> <span>{errors.senha?.message}</span> </div>
+     <div> <span className="span">{errors.senha?.message}</span> </div>
      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
     
      </div>
