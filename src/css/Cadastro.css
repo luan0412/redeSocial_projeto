@@ -25,7 +25,7 @@ body,
     position: relative;
     width: 100%;
     max-width: 1900px;
-    min-height: 800px;
+    min-height: 600px;
     background: rgba(139, 141, 19, 0);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,11 +64,11 @@ body,
     background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    padding: 6%;
+    padding: 2%;
     margin: 0 auto;
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.2) rgba(0,0,0,0.24);
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -84,7 +84,7 @@ body,
     font-family: 'Rampart One', cursive;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -101,7 +101,7 @@ body,
 
 fieldset{
     border: medium none !important;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
     min-width: 100%;
     padding: 0;
     width: 100%;

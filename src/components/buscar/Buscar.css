@@ -1,0 +1,25 @@
+.box-busca{
+    display: flex;
+    margin-left: 10rem;
+    align-items: center;
+}
+
+.box-busca .buscar{
+    width: 300px;
+    padding: 10px 0;
+    padding-left: 10px;
+    
+
+}
+.box-busca .icon{
+    display: block;
+    font-size: 30px;
+    background-color: white;
+
+}
+
+
+.box-busca .ico{
+    fill: #081353;
+    stroke: #081353;
+}
