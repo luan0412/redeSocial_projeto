@@ -3,16 +3,14 @@ p{
     font-family: 'Roboto', sans-serif;
 
 }
-#icone{
-    width: 5%;
-    height: 6vh;
-}
+
 #titulo{
-    font-size: 60px;
+    font-weight: bold;
+    font-size: 40px;
 }
 .mainDiv{
     margin: 0 auto;
-    width: 65%;
+    width: 75%;
     height: 90vh;
     display: flex;
     flex-direction: row;
@@ -23,21 +21,20 @@ p{
     
 }
 .usuariosDiv{
-   
+    margin: none;
     #usuarios{
-        width: 100px;
+        width: 90px;
         display: block;
-        font-size: 18px;
+        font-size: 17.4px;
 }
 }
 .mestreDiv{
-    margin-left:10px;
-    margin-right:10px;
+    border: 1px solid darkcyan;
     height: 90%;
     width: 100%;
-    padding: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 40px;
+    padding-left: 67px;
+    padding-right: 67px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -47,11 +44,12 @@ p{
 .imagensDiv{
   
     #imagens{
-        width: 100px;
+        
+        width: 90px;
         flex-direction: column;
-        margin-right: 15px;
+        margin-right: 10px;
         cursor: pointer;
-        border: 1px solid transparent;
+        border: 2px dashed darkblue;
         border-radius: 4.5px;
     }
 }
@@ -138,8 +136,7 @@ p{
 //SKELETON
 
 .skeleton {
-    
-    animation: skeleton-loading 0.5s linear   alternate;
+    animation: skeleton-loading 1s linear   alternate;
   }
   .skeleton2 {
     
@@ -155,19 +152,26 @@ p{
  
   
   @keyframes skeleton-loading {
-    0% {
+    0%{
+        width: 20%;
+
       background-color: hsl(200, 20%, 70%);
     }
   
     100% {
+        width: 90%;
+
       background-color: hsl(200, 20%, 95%);
     }
-  }@keyframes skeleton-loading2 {
+  
+  }  @keyframes skeleton-loading2 {
     0% {
+        width: 100%;
       background-color: hsl(0, 0%, 24%);
     }
   
     100% {
+        width: 100%;
       background-color: hsl(0, 0%, 24%);
     }
   }

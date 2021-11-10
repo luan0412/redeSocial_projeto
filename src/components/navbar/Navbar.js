@@ -17,13 +17,17 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
           
+            <FaIcons.FaBars onClick={showSidebar} />
+
+          </Link>
+          <h1 className="logo2"> fuck the shit mother fuck</h1>
+
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
+
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose />
               </Link>

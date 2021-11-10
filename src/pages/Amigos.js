@@ -4,6 +4,7 @@ import LocalModal from '../components/modal/localModal.js';
 import RandomUserApi from "../services/RandomUserApi";
 import '../components/modal/styles.scss'
 import iconeAmigos from "../source/iconAmigos.png"
+import Navbar from '../components/navbar/Navbar';
 
 function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -14,7 +15,7 @@ function Amigos() {
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
     document.title = 'Amigos';
-    let url = "?results=50&seed=5"
+    let url = "?results=501&seed=5"
 
     RandomUserApi.get(url)
       .then((response) => {
@@ -35,10 +36,9 @@ function Amigos() {
   }
 
   return (
-
-
     <div id="master">
-      <img id="icone" src={iconeAmigos}/>
+      <Navbar/>
+
       <h1 id="titulo">   Amigos </h1> 
       <div className="mainDiv">
 
