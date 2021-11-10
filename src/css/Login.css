@@ -2,7 +2,7 @@
 
 body{ 
   
-    background-color: whitesmoke;
+    background-color:gainsboro;
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
@@ -12,17 +12,26 @@ body{
  
  
  .main{
-    display: flex;
-    width: 100%;
-    background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
-     background-size: 400% 400%;
-     animation: gradient 15s ease infinite;
-    margin-top: 6%; 
-    text-align: center;
+   display: flex;
+   width: 100%;
+   background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
+   background-size: 400% 400%;
+   animation: gradient 15s ease infinite;
+   border-radius: 1%;
+   margin-top: 2%;
+   
+    
+    
+ 
  }
  
  video{
-    width: 60%;
+    width: 70%;
+ 
+   
+    
+ 
+ 
  }
  
  
@@ -30,6 +39,8 @@ body{
     position: relative;
     width: 100%;
     margin-top: 10%;
+   
+  
  }
  
  input{
@@ -39,6 +50,7 @@ body{
     margin-bottom: 2%;
     background-color: whitesmoke;
     border: none;
+    left: 20%;
  }
 
  .botaoentrar{
@@ -47,6 +59,9 @@ body{
     font-size: 14px;
     border: none;
     cursor: pointer;
+    position: relative;
+    left: 20%;
+    margin-top: 4%;
  }
  
  .botacadastro{
@@ -58,6 +73,8 @@ body{
    border: none;
    cursor: pointer;
    font-size: 14px;
+   position: relative;
+   left: 37%;
  }
  
  .linhahorizontal{
@@ -79,6 +96,14 @@ body{
      }
  }
  
+ 
+
+ header{
+    width: 1%;
+   
+ 
+ }
+ 
  .logo1{
  
     color: black;
@@ -86,24 +111,60 @@ body{
     font-family: 'Rampart One', cursive;
     font-size: 40px;
     margin: 0 auto;
-    margin-right: 95%;
+    text-align: start;
+    background-color: gainsboro;
+    width: 100%;
+    padding: 1%;
+    
+ 
+ 
+ 
+ 
  }
  
  .logo2{
     color: black;
     font-family: 'Lobster', cursive;
     font-family: 'Rampart One', cursive;
-    font-size: 40px;
-    margin-top: -10%;
+    font-size: 49px;
+    margin-top: -15%;
     padding-bottom: 5%;
+    text-align: center;
  }
  
  .linklogo{
+
   text-decoration: none;
+  
+ 
+ }
+ 
+
+
+ .footer{
+ 
+    height: 9vh;
+    background-color:gainsboro;
  }
  
  
- 
+ .copy{
+   position: absolute;
+   bottom: 1%;
+   right: 44%;
+   
+ }
+
+
+
+
+
+ span{
+    margin: 20%;
+    color: white;
+   
+
+ }
  
  
  
@@ -120,7 +181,9 @@ body{
         
        margin-top: 25%;
       
+
     }
+    
  }
  
  
@@ -145,8 +208,14 @@ body{
  @media  (max-width:768px){
     .main{ 
         
-       margin-top: 30%;
+       margin-top: 0%;
       
+    }
+    header{
+       display: none;
+    }
+    .footer{
+       display: none;
     }
  }
  
@@ -156,6 +225,10 @@ body{
         
        margin-bottom: 1%;
       
+    }
+
+    .main{
+       margin-top: 15%;
     }
  }
  

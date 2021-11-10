@@ -51,7 +51,8 @@ export default function Login (){
   
   <div className ="main">
   
-  
+      
+    
       <video  autoPlay loop muted > 
     
         <source className="video1"  src= {Video} type="video/mp4"/>
@@ -64,15 +65,16 @@ export default function Login (){
      
      <h3 className="logo2">L O G I N </h3>
   
-  
+     <div> <span>{errors.email?.message}</span> </div>
      <div className = "campoemail"  >
      <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
-     <span>{errors.email?.message}</span>
+    
      </div>
   
      <div className="camposenha">
+     <div> <span>{errors.senha?.message}</span> </div>
      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
-     <span>{errors.senha?.message}</span>
+    
      </div>
     <button className="botaoentrar" type="submit">Entrar</button>
   
@@ -85,8 +87,17 @@ export default function Login (){
       </Link>
     </div>
   </form>
+
+   
   
   </div>
+
+
+  <div className="footer">
+      
+      <h5 className="copy">Desenvolvido por Bruno Amorim</h5>
+
+    </div>
   
   
   
