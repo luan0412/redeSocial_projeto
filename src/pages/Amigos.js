@@ -54,7 +54,6 @@ function Amigos() {
             </div>
             {isModalVisible ? (
               <LocalModal onClose={() => setIsModalVisible(false)}>
-               <div> <h1> Detalhes</h1> </div>
                <div className="imagemModalDiv"><img id="imagemModal" src={user.picture.large} alts={user.name.first} /></div>  <div className="textos"><p id="nome"> <span id="spanEdit"> Nome: </span> {user.name.first}</p> <p id="sobrenome"> <span id="spanEdit"> Sobrenome: </span> {user.name.last}</p> <p id="idade"> <span id="spanEdit"> Idade: </span>{user.registered.age}</p> <p id="pais"> <span id="spanEdit"> País:</span> {user.location.country}</p> <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p> </div> 
               </LocalModal>) : null}
           </div>

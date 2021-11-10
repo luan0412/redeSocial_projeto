@@ -35,7 +35,7 @@ export default function Perfil() {
                     </div>
 
                     <div className="link">
-                        <a href="https://account.aq.com/Login" target="_blank" rel="noopener noreferrer">Adventure Quest Worlds</a>
+                        <a className="linkJogos" href="https://account.aq.com/Login" target="_blank" rel="noopener noreferrer">Adventure Quest Worlds</a>
                     </div>
 
                     <div className="link">
