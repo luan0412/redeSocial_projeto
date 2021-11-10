@@ -83,7 +83,7 @@ export default function Login (){
   
     <div>
       <Link to="/Cadastro">
-        <button className ="botacadastro" >Cadastrar</button>
+        <button className ="botacadastro" >Cadastre-se</button>
       </Link>
     </div>
   </form>
