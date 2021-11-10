@@ -10,7 +10,7 @@ p{
 }
 .mainDiv{
     margin: 0 auto;
-    width: 85%;
+    width: 90%;
     height: 90vh;
     display: flex;
     flex-direction: row;
@@ -21,32 +21,41 @@ p{
 }
 
 .nomeDiv{
-    width: 100%;
+    width: 90%;
     margin: none;
+
+    display: block;
+
 }
 #nome{
     display: block;
-    width: 100%;
-    font-size: 17.4px;
+    width: 90%;
+    font-size: 16px;
 
 }
 .usuariosDiv{
     width: 100%;
+    display: block;
 
     margin: none;
     #usuarios{
         color: black;
         width: 100%;
         display: block;
-        font-size: 17.4px;
+        font-size: 15px;
 }
+
+}
+#spanEdit{
+    color: black;
+    font-weight: bold;
 }
 .mestreDiv{
-    height: 90%;
+    height: 85%;
     width: 100%;
-    padding: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -57,11 +66,12 @@ p{
   
     #imagens{
         
-        width: 90px;
+        width: 100px;
+
         flex-direction: column;
         margin-right: 10px;
         cursor: pointer;
-        border: 2px solid rgba(0, 0, 139, 0.397);
+        border: 2px solid transparent;
         border-radius: 5px;
     }
 }
@@ -131,7 +141,7 @@ p{
                 position: absolute;
                 width: 2.5px;
                 height: 24px;
-                        background: rgb(156, 152, 152);
+                background: black;
 
                 justify-content: space-between;
             }

@@ -20,6 +20,8 @@ img{
 }
   
 .nav-menu {
+    color: white;
+
     background-color: #060b26;
     width: 250px;
     height: 55vh;
