@@ -27,7 +27,7 @@ export default function Perfil() {
                     </div>
 
                     <div className="nome1">
-                        <h3>Ana Burma</h3>
+                        <h3>{`${item.nome} ${item.sobrenome}`}</h3>
                     </div>
 
                     <div className="nome2">
