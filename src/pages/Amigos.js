@@ -15,7 +15,7 @@ function Amigos() {
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
     document.title = 'Amigos';
-    let url = "?results=501&seed=5"
+    let url = "?results=51&seed=5"
 
     RandomUserApi.get(url)
       .then((response) => {
@@ -45,8 +45,11 @@ function Amigos() {
       {dados.map(
         (item, index) => {
           return <div key={index}>
-              <div className="mestreDiv"> 
-            <div className="usuariosDiv"> <p id="usuarios" className="skeleton skeleton-text">{item.login.username}</p></div>
+              <div className="mestreDiv">
+                <div className="textosDiv"> 
+            <div className="nomeDiv"> <p id="nome" className="skeleton skeleton-text"> Nome: {item.name.first}</p></div>
+            <div className="usuariosDiv"> <p id="usuarios" className="skeleton skeleton-text"> Usuário: {item.login.username}</p></div>
+            </div>
             <div className="imagensDiv"> <img id="imagens" className="skeleton" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
             </div>
             {isModalVisible ? (

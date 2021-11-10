@@ -1,6 +1,6 @@
 .navbar {
     background-color: #081353;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -77,4 +77,14 @@ img{
   
 span {
 margin-left: 16px;
+}
+
+#logo2{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rampart One', cursive;
+    font-size: 38px;
+    justify-content: start;
+    text-align: center;
+    margin-left: 5%;
 }

@@ -83,7 +83,7 @@ export default function Login (){
   
     <div>
       <Link to="/Cadastro">
-        <button className ="botacadastro" >Cadastrar</button>
+        <button className ="botacadastro" >Cadastre-se</button>
       </Link>
     </div>
   </form>
@@ -95,7 +95,7 @@ export default function Login (){
 
   <div className="footer">
       
-      <h5 className="copy">Desenvolvido por Bruno Amorim</h5>
+      <h5 className="copy">Desenvolvido por Equipe Free</h5>
 
     </div>
   
