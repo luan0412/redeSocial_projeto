@@ -41,6 +41,18 @@ function Cadastro() {
 
 
     return(
+        <div>
+              <header> 
+  
+  <div> 
+    
+    <a className="linklogo" href="" target="" > <h3 className="logo1">FREE</h3> </a>
+  
+  </div> 
+  
+
+</header>
+
         <div className="Cadastre">
             <div className="container">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
@@ -273,6 +285,9 @@ function Cadastro() {
                     </form>
                 </div>
             </div>
+        
+  
+        </div>
         </div>
     );
 }
