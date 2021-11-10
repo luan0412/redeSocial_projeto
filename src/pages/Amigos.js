@@ -3,6 +3,7 @@ import '../css/Amigos.css';
 import LocalModal from '../components/modal/localModal.js';
 import RandomUserApi from "../services/RandomUserApi";
 import '../components/modal/styles.scss'
+import iconeAmigos from "../source/iconAmigos.png"
 
 function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -37,15 +38,16 @@ function Amigos() {
 
 
     <div id="master">
-      <h1 id="titulo">Amigos </h1>
+      <img id="icone" src={iconeAmigos}/>
+      <h1 id="titulo">   Amigos </h1> 
       <div className="mainDiv">
 
       {dados.map(
         (item, index) => {
           return <div key={index}>
               <div className="mestreDiv"> 
-            <div className="usuariosDiv"> <p id="usuarios">{item.login.username}</p></div>
-            <div className="imagensDiv"> <img id="imagens" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
+            <div className="usuariosDiv"> <p id="usuarios" className="skeleton skeleton-text">{item.login.username}</p></div>
+            <div className="imagensDiv"> <img id="imagens" className="skeleton" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
             </div>
             {isModalVisible ? (
               <LocalModal onClose={() => setIsModalVisible(false)}>

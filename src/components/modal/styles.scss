@@ -3,18 +3,23 @@ p{
     font-family: 'Roboto', sans-serif;
 
 }
+#icone{
+    width: 5%;
+    height: 6vh;
+}
 #titulo{
     font-size: 60px;
 }
 .mainDiv{
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
     height: 90vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     overflow: auto;
     justify-content: space-between;
+    border: 3px solid lightblue;
     
 }
 .usuariosDiv{
@@ -22,11 +27,12 @@ p{
     #usuarios{
         width: 100px;
         display: block;
-        
+        font-size: 18px;
 }
 }
 .mestreDiv{
-    margin-right:30px;
+    margin-left:10px;
+    margin-right:10px;
     height: 90%;
     width: 100%;
     padding: 60px;
@@ -57,14 +63,14 @@ p{
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.03);
     display: flex;
     justify-content: center;
     align-items: center;
     #nome,#sobrenome,#idade,#pais,#usuario{
         width: 100%;
         margin-left: 50%;
-        color: red;
+        color: rgb(156, 152, 152);
         font-size: 27px
     }
 
@@ -96,7 +102,7 @@ p{
         .close {
             font-size: 25px;
             margin-bottom: 65vh;
-            color: red;
+            color: rgb(156, 152, 152);
             padding-left: 10px;
             display: flex;
             position: relative;
@@ -108,8 +114,60 @@ p{
             width: 32px;
             height: 32px;
             top: 16px;
-            
+             
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                width: 2.5px;
+                height: 24px;
+                        background: rgb(156, 152, 152);
+
+                justify-content: space-between;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
             }
         }
     }
 
+//SKELETON
+
+.skeleton {
+    
+    animation: skeleton-loading 0.5s linear   alternate;
+  }
+  .skeleton2 {
+    
+    animation: skeleton-loading2 0.5s linear  alternate;
+  }
+  
+  
+  .skeleton-text {
+   
+    margin-bottom: .10rem;
+    border-radius: .125rem;
+  }
+ 
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 70%);
+    }
+  
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }@keyframes skeleton-loading2 {
+    0% {
+      background-color: hsl(0, 0%, 24%);
+    }
+  
+    100% {
+      background-color: hsl(0, 0%, 24%);
+    }
+  }

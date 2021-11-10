@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Amigos from './pages/Amigos';
 import Cadastro from './pages/Cadastro';
+import Sobre from './pages/Sobre';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/Cadastro' component={Cadastro} />  
           <Route path='/Amigos' component={Amigos} />
+          <Route path='/Sobre' component = {Sobre} />
         </Switch>
       </Router>
     

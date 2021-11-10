@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './components/modal/styles.scss'
 ReactDOM.render(
+  
   <React.StrictMode>
     <App />
   </React.StrictMode>,

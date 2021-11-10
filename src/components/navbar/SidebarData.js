@@ -4,6 +4,8 @@ import * as AiIcons from 'react-icons/ai';
 import * as MdIcons from 'react-icons/md';
 import * as BsIcons from "react-icons/bs";
 
+
+
 export const SidebarData = [
   {
     title: 'Home',
@@ -25,7 +27,12 @@ export const SidebarData = [
     icon: <MdIcons.MdAppRegistration />,
     cName: 'nav-text'
   },
-
+    {
+      title: 'Sobre',
+      path: '/Sobre',
+      icon: <AiIcons.AiOutlineExclamation/>,
+      cName: 'nav-text'
+    },
   {
     title: 'Sair',
     path: '/Login',
