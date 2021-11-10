@@ -224,8 +224,15 @@ body{
     .main{ 
         
        margin-top: 0%;
+       
       
     }
+   .logo2{
+      margin: 1%;
+   }
+
+
+
     header{
        display: none;
     }
