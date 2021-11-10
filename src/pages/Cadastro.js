@@ -5,13 +5,11 @@ import Videofull from '../source/videofull.mp4';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-//import { useState } from 'react';
+
+import axios from 'axios';
 
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
-//import { connect } from "react-redux";
-//import updateAction from "./actions";
 
 const  schema = yup.object().shape({
     email: yup.string().email('O campo e-mail é inválido')
@@ -26,7 +24,7 @@ const  schema = yup.object().shape({
     
   })
 
-function Cadastro(props) {
+function Cadastro() {
 
     const { register, handleSubmit,formState: { errors } } = useForm({
         resolver: yupResolver(schema)
@@ -34,12 +32,12 @@ function Cadastro(props) {
 
       let history = useHistory()
     
-      //const handleCadastro = data => props.updateAction(data);
-      function handleCadastro(data){
-        console.log(data)
+      const handleCadastro = data => axios.post("https://start-cadastro.herokuapp.com/create", data)
+      .then(() => {
         history.push("/")
-        
-      }
+      }).catch(() => {
+          console.log('nao foi')
+      })
 
 
     return(
@@ -278,7 +276,7 @@ function Cadastro(props) {
         </div>
     );
 }
-//connect(({ nome }) => ({ nome }), updateAction)(YourForm);
+
 export default Cadastro
 
     
