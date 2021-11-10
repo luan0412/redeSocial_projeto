@@ -95,7 +95,7 @@ export default function Login (){
 
   <div className="footer">
       
-      <h5 className="copy">Desenvolvido por Bruno Amorim</h5>
+      <h5 className="copy">Desenvolvido por Equipe Free</h5>
 
     </div>
   
