@@ -6,9 +6,9 @@ const LocalModal = ({ id = "modelo", onClose = () => { }, children }) => {
         if (e.target.id === id) onClose();
     }
     return <div id={id} className="mainModal" onClick={handleOutsideClick}>
-        <div className="container">
+        <div className="container2">
             <button className="close" onClick={onClose}>Fechar</button>
-            <div className="content"> {children}
+            <div className="content2"> {children}
             </div>
         </div>
     </div>

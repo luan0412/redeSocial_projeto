@@ -1,32 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+p{
+    font-family: 'Roboto', sans-serif;
+
+}
+#titulo{
+    font-size: 60px;
+}
+.mainDiv{
+    margin: 0 auto;
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-between;
+    
+}
+.usuariosDiv{
+   
+    #usuarios{
+        width: 100px;
+        display: block;
+        
+}
+}
+.mestreDiv{
+    margin-right:30px;
+    height: 90%;
+    width: 100%;
+    padding: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imagensDiv{
+  
+    #imagens{
+        width: 100px;
+        flex-direction: column;
+        margin-right: 15px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 4.5px;
+    }
+}
 .mainModal {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     #nome,#sobrenome,#idade,#pais,#usuario{
-        margin-left: 130%;
+        width: 100%;
+        margin-left: 50%;
         color: red;
+        font-size: 27px
     }
+
     
-      
-    .container {
+   
+        #imagemModal{
+            height: auto;
+            width: 180%;
+            border: 2px solid transparent;
+            border-radius: 4px;
+    }
+    .content2{
         display: flex;
         align-items: center;
-        padding-right: 70%;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .container2 {
+        display: flex;
+        align-items: center;
         text-align: center;
         background-color: #fff;
         color: #000;
         width: 60%;
-        height: 60%;
+        height: 80%;
         border-radius: 20px;
         .close {
-            margin-bottom: 70vh;
+            font-size: 25px;
+            margin-bottom: 65vh;
             color: red;
             padding-left: 10px;
             display: flex;
