@@ -88,6 +88,7 @@ html, body{
 }
 
 .link a{
+    color: rgb(1, 1, 100);
     text-decoration: none;
    
 }
@@ -99,6 +100,13 @@ a:hover{
 .nome3{
     font-size: 30px;
     margin-top: 50px;
+}
+
+.info{
+    font-size: 20px;
+    margin-top: 3%;
+    text-align: center;
+    line-height: 35px;
 }
 
 

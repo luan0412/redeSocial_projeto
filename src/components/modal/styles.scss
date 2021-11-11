@@ -7,42 +7,51 @@ p{
 #titulo{
     font-weight: bold;
     font-size: 40px;
+    
 }
 .mainDiv{
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     height: 90vh;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: auto;
+    padding-left: 370px;
+    
     justify-content: space-between;
+    
     
 }
 
 .nomeDiv{
     width: 90%;
     margin: none;
-
+    
     display: block;
 
 }
 #nome{
+    text-align: left;
     display: block;
     width: 90%;
-    font-size: 16px;
+    font-size: 26px;
+    
 
 }
 .usuariosDiv{
-    width: 100%;
-    display: block;
-
+    width: 400px;
+    display: flex;
     margin: none;
+    
+
     #usuarios{
+        text-align: left;
         color: black;
         width: 100%;
         display: block;
-        font-size: 15px;
+        font-size: 26px;
+        
+
 }
 
 }
@@ -52,7 +61,7 @@ p{
 }
 .mestreDiv{
     height: 85%;
-    width: 100%;
+    width: 500px;
     padding: 25px;
     padding-left: 30px;
     padding-right: 30px;
@@ -60,14 +69,15 @@ p{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
+    
 }
 
 .imagensDiv{
   
     #imagens{
         
-        width: 100px;
-
+        width: 200px;
+        height: 200px;
         flex-direction: column;
         margin-right: 10px;
         cursor: pointer;
@@ -88,28 +98,39 @@ p{
     justify-content: center;
     align-items: center;
     #nome,#sobrenome,#idade,#pais,#usuario{
-        width: 100%;
-        margin-left: 50%;
-        color: rgb(156, 152, 152);
+        text-align: left;
+        width: 300px;
+       
+        line-height: 40px;
+        margin-left: 20px;
+        color: rgb(26, 24, 24);
         font-size: 27px
     }
 
     
-   
+   .imagemModalDiv{
+       margin-left: 60%;
+   }
         #imagemModal{
             height: auto;
-            width: 180%;
+            width: 300px;
             border: 2px solid transparent;
-            border-radius: 7px;
+            border-radius: 100vh;
     }
     .content2{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        
         height: 100%;
+        
     }
-    
+    .modalAll h1{
+        margin-left: 60%;
+        margin-bottom: 80px;
+        text-align: center;
+        width: 30%;
+    }
     .container2 {
         display: flex;
         align-items: center;
@@ -118,12 +139,13 @@ p{
         color: #000;
         width: 60%;
         height: 80%;
-        border-radius: 20px;
+        border-radius: 70px;
+        border: solid black 4px;
         .close {
             font-size: 25px;
-            margin-bottom: 65vh;
+            margin-bottom: 70vh;
             color: rgb(156, 152, 152);
-            padding-left: 10px;
+            padding-left: 20px;
             display: flex;
             position: relative;
             align-items: center;

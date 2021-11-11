@@ -4,7 +4,9 @@ import '../css/Home.css';
 import PostList from '../components/feed/PostList';
 import Coment from '../components/feed/FeedComent';
 import EditPost from '../components/feed/EditPost';
-import Perfil from './Perfil'
+import Perfil from './Perfil';
+
+
 
 function Home() {
   return (

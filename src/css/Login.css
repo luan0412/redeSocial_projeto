@@ -219,7 +219,7 @@ body{
 
 
 
-.span{
+.spanLogin{
     margin: 20%;
     color: white;
    
@@ -244,7 +244,7 @@ body{
 
     }
     
-    span{
+    .spanLogin{
        margin: 17%;
     }
  }
