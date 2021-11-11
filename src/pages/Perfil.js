@@ -17,10 +17,6 @@ export default function Perfil() {
 
     }, [])
 
-<<<<<<< HEAD
-export default function Perfil() { 
-=======
->>>>>>> 5dab985feaa1142595623f442c661e2b2bea41a5
     return(
       <>
       {dados.map((item, index) => {
@@ -34,21 +30,9 @@ export default function Perfil() {
                         <h3>{`${item.nome} ${item.sobrenome}`}</h3>
                     </div>
 
-<<<<<<< HEAD
-        <div className="info">
-            <p>Email: rafaelasoares@gmail.com</p>
-            <p>Gênero: Feminino</p>
-            <p>Idade: 25 anos</p>
-        </div>
-
-        <div className="nome2">
-            <h3>Jogos:</h3>
-        </div>
-=======
                     <div className="nome2">
                         <h3>Jogos:</h3>
                     </div>
->>>>>>> 5dab985feaa1142595623f442c661e2b2bea41a5
 
                     <div className="link">
                         <a href="https://account.aq.com/Login" target="_blank" rel="noopener noreferrer">Adventure Quest Worlds</a>
