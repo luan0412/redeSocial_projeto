@@ -101,6 +101,13 @@ a:hover{
     margin-top: 50px;
 }
 
+.info{
+    font-size: 20px;
+    margin-top: 3%;
+    text-align: center;
+    line-height: 35px;
+}
+
 
 
 /* =========================================================< Meio >============================================ */
@@ -118,3 +125,10 @@ a:hover{
     background: rgba(255, 0, 0, 0.658);
     padding: 3%;
 }
+
+h1{
+    color: blue;
+}
+
+
+

@@ -4,7 +4,10 @@ import '../css/Home.css';
 import PostList from '../components/feed/PostList';
 import Coment from '../components/feed/FeedComent';
 import EditPost from '../components/feed/EditPost';
-import Perfil from './Perfil'
+import TelaAmigos from '.TelaAmigos';
+import Perfil from './Perfil';
+
+
 
 function Home() {
   return (
@@ -20,7 +23,6 @@ function Home() {
         <PostList />
         </div>
         <div className="direita">
-        <h1>5 amigos ou mais 0.0</h1>
         </div>
       </div>
     </div>

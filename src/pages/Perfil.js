@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-export default function Perfil() {
+export default function Perfil() { 
     return(
       <div className="master">
             <div className="foto1">
@@ -12,6 +12,12 @@ export default function Perfil() {
 
         <div className="nome1">
             <h3>Rafaela Soares</h3>
+        </div>
+
+        <div className="info">
+            <p>Email: rafaelasoares@gmail.com</p>
+            <p>Gênero: Feminino</p>
+            <p>Idade: 25 anos</p>
         </div>
 
         <div className="nome2">
