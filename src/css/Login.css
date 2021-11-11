@@ -2,7 +2,7 @@
 
 body{ 
   
-    background-color:gainsboro;
+    background-color:rgb(218, 209, 209);
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
@@ -43,7 +43,7 @@ body{
   
  }
  
- input{
+#formLogin input{
     width: 64%;
     padding: 2%;
     position: relative;
@@ -56,18 +56,23 @@ body{
  .botaoentrar{
     width: 64%;
     padding: 2%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
     font-size: 14px;
     border: none;
     cursor: pointer;
     position: relative;
     left: 20%;
     margin-top: 4%;
+  
  }
+
+ 
  
  .botacadastro{
    width: 30%;
    padding: 2%;
-   background-color: whitesmoke;
    margin-top: 10%;
    border-radius: 10%;
    border: none;
@@ -75,6 +80,8 @@ body{
    font-size: 14px;
    position: relative;
    left: 37%;
+   background-color: #1c1e21;
+   color: white;
  }
  
  .linhahorizontal{
@@ -100,6 +107,8 @@ body{
 
  header{
     width: 1%;
+    
+    
    
  
  }
@@ -114,7 +123,10 @@ body{
     text-align: start;
     background-color: gainsboro;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
+    
+   
+   
     
  
  
@@ -144,7 +156,7 @@ body{
  .footer{
  
     height: 9vh;
-    background-color:gainsboro;
+    background-color:#dad1d1;
  }
  
  
@@ -159,7 +171,7 @@ body{
 
 
 
- span{
+.span{
     margin: 20%;
     color: white;
    
@@ -184,6 +196,9 @@ body{
 
     }
     
+    span{
+       margin: 17%;
+    }
  }
  
  
@@ -209,8 +224,15 @@ body{
     .main{ 
         
        margin-top: 0%;
+       
       
     }
+   .logo2{
+      margin: 1%;
+   }
+
+
+
     header{
        display: none;
     }

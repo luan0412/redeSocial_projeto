@@ -31,6 +31,7 @@ function Coment() {
     }).catch(() => {
         console.log('nao foi')
     })
+
   return (
     <div className="post">
         <div className="post-header">

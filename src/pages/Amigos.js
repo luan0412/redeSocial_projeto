@@ -3,6 +3,8 @@ import '../css/Amigos.css';
 import LocalModal from '../components/modal/localModal.js';
 import RandomUserApi from "../services/RandomUserApi";
 import '../components/modal/styles.scss'
+import iconeAmigos from "../source/iconAmigos.png"
+import Navbar from '../components/navbar/Navbar';
 
 function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -13,7 +15,7 @@ function Amigos() {
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
     document.title = 'Amigos';
-    let url = "?results=50&seed=5"
+    let url = "?results=54&seed=6"
 
     RandomUserApi.get(url)
       .then((response) => {
@@ -34,22 +36,26 @@ function Amigos() {
   }
 
   return (
-
-
     <div id="master">
-      <h1 id="titulo">Amigos </h1>
+      <Navbar/>
+
+      <h1 id="titulo">   Amigos </h1> 
       <div className="mainDiv">
 
       {dados.map(
         (item, index) => {
           return <div key={index}>
-              <div className="mestreDiv"> 
-            <div className="usuariosDiv"> <p id="usuarios">{item.login.username}</p></div>
-            <div className="imagensDiv"> <img id="imagens" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
+              <div className="mestreDiv">
+                <div className="textosDiv"> 
+            <div className="nomeDiv"> <p id="nome" className="skeleton skeleton-text"> <span id="spanEdit"> Nome: </span> {item.name.first}</p></div>
+            <div className="usuariosDiv"> <p id="usuarios" className="skeleton skeleton-text"> <span id="spanEdit"> Usuário: </span> {item.login.username}</p></div>
+            </div>
+            <div className="imagensDiv"> <img id="imagens" className="skeleton" onClick={() => setUsuarioEspecifico(item)} src={item.picture.large} alt={item.name.first} /> </div>
             </div>
             {isModalVisible ? (
               <LocalModal onClose={() => setIsModalVisible(false)}>
-               <div className="imagemModalDiv"><img id="imagemModal" src={user.picture.large} alts={user.name.first} /></div>  <div className="textos"><p id="nome">Nome: {user.name.first}</p> <p id="sobrenome"> Sobrenome: {user.name.last}</p> <p id="idade"> Idade: {user.registered.age}</p> <p id="pais"> País: {user.location.country}</p> <p id="usuario"> Usuário: {user.login.username}  </p> </div> 
+               <div> <h1> Detalhes</h1> </div>
+               <div className="imagemModalDiv"><img id="imagemModal" src={user.picture.large} alts={user.name.first} /></div>  <div className="textos"><p id="nome"> <span id="spanEdit"> Nome: </span> {user.name.first}</p> <p id="sobrenome"> <span id="spanEdit"> Sobrenome: </span> {user.name.last}</p> <p id="idade"> <span id="spanEdit"> Idade: </span>{user.registered.age}</p> <p id="pais"> <span id="spanEdit"> País:</span> {user.location.country}</p> <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p> </div> 
               </LocalModal>) : null}
           </div>
 

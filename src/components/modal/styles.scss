@@ -3,12 +3,14 @@ p{
     font-family: 'Roboto', sans-serif;
 
 }
+
 #titulo{
-    font-size: 60px;
+    font-weight: bold;
+    font-size: 40px;
 }
 .mainDiv{
     margin: 0 auto;
-    width: 60%;
+    width: 90%;
     height: 90vh;
     display: flex;
     flex-direction: row;
@@ -17,21 +19,43 @@ p{
     justify-content: space-between;
     
 }
-.usuariosDiv{
-   
-    #usuarios{
-        width: 100px;
-        display: block;
-        
+
+.nomeDiv{
+    width: 90%;
+    margin: none;
+
+    display: block;
+
 }
+#nome{
+    display: block;
+    width: 90%;
+    font-size: 16px;
+
+}
+.usuariosDiv{
+    width: 100%;
+    display: block;
+
+    margin: none;
+    #usuarios{
+        color: black;
+        width: 100%;
+        display: block;
+        font-size: 15px;
+}
+
+}
+#spanEdit{
+    color: black;
+    font-weight: bold;
 }
 .mestreDiv{
-    margin-right:30px;
-    height: 90%;
+    height: 85%;
     width: 100%;
-    padding: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -41,12 +65,14 @@ p{
 .imagensDiv{
   
     #imagens{
+        
         width: 100px;
+
         flex-direction: column;
-        margin-right: 15px;
+        margin-right: 10px;
         cursor: pointer;
-        border: 1px solid transparent;
-        border-radius: 4.5px;
+        border: 2px solid transparent;
+        border-radius: 5px;
     }
 }
 .mainModal {
@@ -57,14 +83,14 @@ p{
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.03);
     display: flex;
     justify-content: center;
     align-items: center;
     #nome,#sobrenome,#idade,#pais,#usuario{
         width: 100%;
         margin-left: 50%;
-        color: red;
+        color: rgb(156, 152, 152);
         font-size: 27px
     }
 
@@ -74,7 +100,7 @@ p{
             height: auto;
             width: 180%;
             border: 2px solid transparent;
-            border-radius: 4px;
+            border-radius: 7px;
     }
     .content2{
         display: flex;
@@ -96,7 +122,7 @@ p{
         .close {
             font-size: 25px;
             margin-bottom: 65vh;
-            color: red;
+            color: rgb(156, 152, 152);
             padding-left: 10px;
             display: flex;
             position: relative;
@@ -108,8 +134,66 @@ p{
             width: 32px;
             height: 32px;
             top: 16px;
-            
+             
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                width: 2.5px;
+                height: 24px;
+                background: black;
+
+                justify-content: space-between;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
             }
         }
     }
 
+//SKELETON
+
+.skeleton {
+    animation: skeleton-loading 1s linear   alternate;
+  }
+  .skeleton2 {
+    
+    animation: skeleton-loading2 0.5s linear  alternate;
+  }
+  
+  
+  .skeleton-text {
+   
+    margin-bottom: .10rem;
+    border-radius: .125rem;
+  }
+ 
+  
+  @keyframes skeleton-loading {
+    0%{
+        width: 20%;
+
+      background-color: hsl(200, 20%, 70%);
+    }
+  
+    100% {
+        width: 90%;
+
+      background-color: hsl(200, 20%, 95%);
+    }
+  
+  }  @keyframes skeleton-loading2 {
+    0% {
+        width: 100%;
+      background-color: hsl(0, 0%, 24%);
+    }
+  
+    100% {
+        width: 100%;
+      background-color: hsl(0, 0%, 24%);
+    }
+  }

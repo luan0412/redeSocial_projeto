@@ -1,6 +1,6 @@
 .navbar {
     background-color: #081353;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -20,9 +20,11 @@ img{
 }
   
 .nav-menu {
+    color: white;
+
     background-color: #060b26;
     width: 250px;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -77,4 +79,19 @@ img{
   
 span {
 margin-left: 16px;
+}
+
+#logo2{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rampart One', cursive;
+    font-size: 38px;
+    justify-content: start;
+    text-align: center;
+    margin-left: 5%;
+}
+#em-d{
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.89);
+    margin-left: 6%;
 }

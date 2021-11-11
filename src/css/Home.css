@@ -122,13 +122,23 @@ a:hover{
 
 .container .direita{
     position: relative;
-    background: rgba(255, 0, 0, 0.658);
     padding: 3%;
 }
 
+<<<<<<< HEAD
 h1{
     color: blue;
 }
 
 
 
+=======
+#em-d2{
+    font-size: 30px;
+    color: rgba(5, 5, 5, 0.89);
+    margin-top: 50%;
+    margin-left: 20%;
+    transform: rotate(-45deg)
+}
+
+>>>>>>> 5dab985feaa1142595623f442c661e2b2bea41a5

@@ -68,7 +68,7 @@ export default function PostList() {
         },
         date: '08 Nov 2021',
         content:
-          'Fala galera, beleza?\nEstou fazendo o curso gratuito da Start Latam de desenvolvimento e está sendo muito massa! Alguém aí mais fazendo? Comenta na publicação para trocarmos uma idéia e infos',
+          'Fala galera, beleza?\nEstou fazendo o curso gratuito da Start de desenvolvimento e está sendo muito massa! Alguém aí mais fazendo? Comenta na publicação para trocarmos uma idéia e infos',
         comments: [
           {
             id: 12,
