@@ -65,14 +65,14 @@ export default function Login (){
      
      <h3 className="logo2">L O G I N </h3>
   
-     <div> <span className="span">{errors.email?.message}</span> </div>
+     <div> <span className="spanLogin">{errors.email?.message}</span> </div>
      <div className = "campoemail"  >
      <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
     
      </div>
   
      <div className="camposenha">
-     <div> <span className="span">{errors.senha?.message}</span> </div>
+     <div> <span className="spanLogin">{errors.senha?.message}</span> </div>
      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
     
      </div>

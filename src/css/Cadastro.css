@@ -225,9 +225,9 @@ label{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 3%;
     border-top: dotted 2px #1c1e21;
-    padding: 3%;
+    padding-top: 3%;
 }
 
 #form a{
@@ -257,7 +257,7 @@ label{
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        height: 100vh;
         background-image: url(../source/hoian.jpg);
         background-position: center center;
         background-repeat: no-repeat;

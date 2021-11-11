@@ -5,7 +5,7 @@ import * as BiIcons from 'react-icons/bi';
 
 function BarraDeBuscar(){
     return(
-        <div className="box-busca">
+        <div className="boxBusca">
             <i className="icon"><BiIcons.BiSearchAlt className="ico" /></i>
             <input type="text" placeholder="Buscar..."  className="buscar" />
         </div>
