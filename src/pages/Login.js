@@ -61,7 +61,7 @@ export default function Login (){
   
   
   
-  <form id="formLogin" onSubmit={handleSubmit(handleLogin)}>
+  <form id="formLogin" onSubmit={handleSubmit(handleLogin)} autocomplete="off">
      
      <h3 className="logo2">L O G I N </h3>
   
