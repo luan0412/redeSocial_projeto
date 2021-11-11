@@ -28,6 +28,8 @@ p{
 
 }
 #nome{
+    text-align: left;
+
     display: block;
     width: 90%;
     font-size: 16px;
@@ -39,6 +41,7 @@ p{
 
     margin: none;
     #usuarios{
+        text-align: left;
         color: black;
         width: 100%;
         display: block;
@@ -88,14 +91,18 @@ p{
     justify-content: center;
     align-items: center;
     #nome,#sobrenome,#idade,#pais,#usuario{
-        width: 100%;
+        text-align: left;
+        width: 120%;
+        
         margin-left: 50%;
-        color: rgb(156, 152, 152);
+        color: rgb(128, 126, 126);
         font-size: 27px
     }
 
     
-   
+   .imagemModalDiv{
+       margin-left: 100px;
+   }
         #imagemModal{
             height: auto;
             width: 180%;
@@ -106,10 +113,15 @@ p{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 90%;
         height: 100%;
     }
-    
+    .modalAll h1{
+        margin-left: 60%;
+        margin-bottom: 80px;
+        text-align: center;
+        width: 30%;
+    }
     .container2 {
         display: flex;
         align-items: center;
@@ -121,9 +133,9 @@ p{
         border-radius: 20px;
         .close {
             font-size: 25px;
-            margin-bottom: 65vh;
+            margin-bottom: 70vh;
             color: rgb(156, 152, 152);
-            padding-left: 10px;
+            padding-left: 20px;
             display: flex;
             position: relative;
             align-items: center;
