@@ -7,8 +7,13 @@ p{
 #titulo{
     font-weight: bold;
     font-size: 40px;
+    margin-top: 38px;
+    margin-bottom: 35px;
+    text-align: center;
   
 }
+
+
 .mainDiv{
     margin: 0 auto;
     width: 85%;
@@ -17,7 +22,6 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 100px;
-    
     justify-content: space-between;
     
     
@@ -109,11 +113,11 @@ p{
 
     
    .imagemModalDiv{
-       margin-left: 60%;
+       margin-left: 20%;
    }
         #imagemModal{
             height: auto;
-            width: 300px;
+            width: 200px;
             border: 2px solid transparent;
             border-radius: 100vh;
     }
@@ -137,8 +141,8 @@ p{
         text-align: center;
         background-color: #fff;
         color: #000;
-        width: 60%;
-        height: 80%;
+        width: 40%;
+        height: 60%;
         border-radius: 70px;
         border: solid black 4px;
         .close {

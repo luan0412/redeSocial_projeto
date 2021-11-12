@@ -71,6 +71,13 @@ html, body{
 
 .nome1{
     font-size: 30px;
+    margin-top: 7%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.dados{
+    font-size: 20px;
     margin-top: 3%;
     text-align: center;
 }
