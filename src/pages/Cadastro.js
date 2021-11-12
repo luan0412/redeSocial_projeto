@@ -1,7 +1,8 @@
 import React from 'react';
 import '../css/Cadastro.css';
 import Videofull from '../source/videofull.mp4';
-import Header from '../components/começoFim/Header'
+import Header from '../components/começoFim/Header';
+import Footer from '../components/começoFim/Footer';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -255,9 +256,9 @@ function Cadastro() {
                         <h2>Gênero:</h2>
                         <fieldset>
                             <div className="field_flex">
-                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino" value="feminino" {...register('genero') } /></label>
-                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino"  value="masculino" {...register('genero') } /></label>
-                            <label  for="neutro">Neutro<input type="radio" name="genero" id="neutro" value="neutro" {...register('genero') } /></label>
+                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino" value="F eminino" {...register('genero') } /></label>
+                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino"  value="Masculino" {...register('genero') } /></label>
+                            <label  for="neutro">Outros<input type="radio" name="genero" id="neutro" value="Outros" {...register('genero') } /></label>
                             </div>
                             <span>{errors.genero?.message}</span>
                         </fieldset>
@@ -279,6 +280,7 @@ function Cadastro() {
         
   
         </div>
+        <Footer />
         </>
         
     );

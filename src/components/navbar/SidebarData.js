@@ -22,17 +22,12 @@ export const SidebarData = [
   },
 
   {
-    title: 'Novo cadastro',
-    path: '/Cadastro',
-    icon: <MdIcons.MdAppRegistration />,
+    title: 'Sobre',
+    path: '/Sobre',
+    icon: <AiIcons.AiOutlineExclamation/>,
     cName: 'nav-text'
   },
-    {
-      title: 'Sobre',
-      path: '/Sobre',
-      icon: <AiIcons.AiOutlineExclamation/>,
-      cName: 'nav-text'
-    },
+  
   {
     title: 'Sair',
     path: '/Login',
