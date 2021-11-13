@@ -1,8 +1,9 @@
 .navbar {
-    background-color: #081353;
+    background: linear-gradient(90deg ,#081353, #040925);
     height: 60px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    padding-right: 20px;
     align-items: center;
     
 }
@@ -11,13 +12,16 @@ img{
     width: 280px;
     height: 100px;
     position: relative;
-    left: 5%;
+   
 }
   
 .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .nav-menu {
@@ -89,7 +93,9 @@ margin-left: 16px;
     font-size: 38px;
     justify-content: start;
     text-align: center;
-    margin-left: 5%;
+    margin-left: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
 }
 #em-d{
     font-size: 20px;
@@ -97,3 +103,23 @@ margin-left: 16px;
     margin-left: 6%;
 }
 
+.search-exit-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.exit-icon span{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}

@@ -16,7 +16,8 @@
     align-items: center;
     display: block;
     font-size: 30px;
-
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 

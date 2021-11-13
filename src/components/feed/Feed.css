@@ -112,6 +112,9 @@ textarea {
   margin: 0 0 5px;
   padding: 10px;
   font-size: 17px;
+  resize: none;
+  
+
 }
 
 textarea::placeholder{

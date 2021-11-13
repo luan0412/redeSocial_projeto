@@ -135,6 +135,7 @@ p{
         width: 30%;
     }
     .container2 {
+        position: relative;
         display: flex;
         align-items: center;
         text-align: center;
@@ -147,10 +148,11 @@ p{
         .close {
             font-size: 25px;
             color: rgb(156, 152, 152);
-            padding-bottom: 100px;
-            margin-left: 600px;
+          
+            position: absolute;
             display: flex;
-            position: relative;
+            top: 40px;
+            right: 30px;
             align-items: center;
             border: none;
             background: transparent;
@@ -158,8 +160,7 @@ p{
             outline: none;
             width: 32px;
             height: auto;
-            top: 16px;
-             
+           
             &:before,
             &:after {
                 content: "";
@@ -180,6 +181,12 @@ p{
         }
     }
 
+
+     #mensagem{
+            margin-top:20px;
+            margin-left: 200px;
+            font-size: 20px;
+    }
 //SKELETON
 
 .skeleton {

@@ -15,6 +15,13 @@ const  schema = yup.object().shape({
     content: yup.string().required('O campo nome é obrigatório')
 })
 
+var data = new Date();
+
+var hora = data.getHours();
+var minutos = data.getMinutes();
+
+var horario = `${hora}:${minutos}`;
+
 
 function Coment() {
 
@@ -38,7 +45,7 @@ function Coment() {
             <img className="avatar" src={ avata } />
             <div className="details">
                 <span>Avatar temporário</span>
-                <span>23:67</span>
+                <span>{horario}</span>
             </div>
         </div>
         <form className="form" onSubmit={handleSubmit(addPost)}>
