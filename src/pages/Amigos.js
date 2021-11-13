@@ -14,7 +14,7 @@ function Amigos() {
 
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
-    let url = "?results=54&seed=666"
+    let url = "?results=54&seed=666";
 
     RandomUserApi.get(url)
       .then((response) => {

@@ -36,7 +36,7 @@ function Cadastro() {
     
       const handleCadastro = data => axios.post("https://start-cadastro.herokuapp.com/create", data)
       .then(() => {
-        history.push("/")
+        history.push("/Login")
       }).catch(() => {
           console.log('nao foi')
       });
@@ -51,7 +51,7 @@ function Cadastro() {
                 <div className="video">
                 </div>
                 <div className="cadastro">
-                    <form action="" id="form" onSubmit={handleSubmit(handleCadastro)}>
+                    <form autocomplete="off" id="form" onSubmit={handleSubmit(handleCadastro)}>
                         <h1>Nova Conta</h1>
                         <fieldset>
                             <input type="text" name="nome" placeholder="Nome" id="nome" {...register('nome') } />
@@ -264,14 +264,12 @@ function Cadastro() {
                         </fieldset>
                             
                         <fieldset className="field_flex">
-                            <button type="submit" id="botao">Cadastre-se</button>
+                            <button type="submit" id="botao">Nova Conta</button>
                         </fieldset>
                             
                         
                         <div id="link">
-                            <Link to="/Login">
-                               <a href="/Login">Já tem uma conta?</a>
-                            </Link>
+                            <button id="botao" type="submit" onClick={() => history.push("/Login")} >Login</button>
                         </div>
                        
                     </form>
