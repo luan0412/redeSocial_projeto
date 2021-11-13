@@ -70,7 +70,7 @@ function Amigos() {
                <p id="idade"> <span id="spanEdit"> Idade: </span>{user.registered.age}</p> 
                <p id="pais"> <span id="spanEdit"> País:</span> {user.location.country}</p> 
                <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p> </div> 
-
+                <button> Enviar mensagem </button>
               </LocalModal>) : null}
               
           </div>

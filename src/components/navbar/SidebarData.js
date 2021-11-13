@@ -21,12 +21,7 @@ export const SidebarData = [
     cName: 'nav-text'
   },
 
-  {
-    title: 'Novo cadastro',
-    path: '/Cadastro',
-    icon: <MdIcons.MdAppRegistration />,
-    cName: 'nav-text'
-  },
+ 
     {
       title: 'Sobre',
       path: '/Sobre',

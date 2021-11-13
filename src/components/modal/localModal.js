@@ -8,7 +8,7 @@ const LocalModal = ({ id = "modelo", onClose = () => { }, children }) => {
     return <div id={id} className="mainModal" onClick={handleOutsideClick}>
         <div className="container2">
             <button className="close" onClick={onClose}></button>
-            <div className="modalAll"> <h1> Detalhes: </h1>
+            <div className="modalAll"> 
             <div className="content2"> {children}
             </div>
         </div>
