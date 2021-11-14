@@ -11,6 +11,7 @@ import Perfil from './Perfil';
 function Home() {
   return (
     <div className='home'>
+      <title>Home</title>
       <Navbar />
       <div className="container">
         <div className="esquerda">

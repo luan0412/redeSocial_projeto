@@ -35,19 +35,16 @@ export default function Login (){
 
   let history = useHistory()
     
-  function handleLogin(values){
-    axios.get("https://start-cadastro.herokuapp.com/list", {
-
-    }).then((response) => {
-      console.log(response)
-    })
+  function handleLogin(){
+   
+       history.push("/")
     
   }
 
 
   return (<div>
   
-  
+  <title>Login</title>
   
   <header> 
   

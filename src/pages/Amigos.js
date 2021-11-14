@@ -10,7 +10,7 @@ function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [user, setUser] = useState(null)
   const [dados, setDados] = useState([]);
-
+ 
 
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
@@ -39,8 +39,10 @@ function Amigos() {
     <>  
     <Navbar/>
     <h1 id="titulo">Amigos </h1> 
+    
 
     <div id="master">
+    <title>Amigos</title>
      
 
       
