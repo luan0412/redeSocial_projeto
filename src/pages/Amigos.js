@@ -10,7 +10,7 @@ function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [user, setUser] = useState(null)
   const [dados, setDados] = useState([]);
-
+ 
 
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
@@ -39,8 +39,10 @@ function Amigos() {
     <>  
     <Navbar/>
     <h1 id="titulo">Amigos </h1> 
+    
 
     <div id="master">
+    <title>Amigos</title>
      
 
       
@@ -63,17 +65,20 @@ function Amigos() {
             {isModalVisible ? (
 
               <LocalModal onClose={() => setIsModalVisible(false)}>
+                 <div className="imagemModalDiv"><img id="imagemModal" src={user.picture.large} alts={user.name.first} /></div> 
                   <div className="modalClassAll">
                 <div className="modalClass">
-               <div className="imagemModalDiv"><img id="imagemModal" src={user.picture.large} alts={user.name.first} /></div>  
+               
                <div className="textos"><p id="nome"> <span id="spanEdit"> Nome: </span> {user.name.first}</p> 
                <p id="sobrenome"> <span id="spanEdit"> Sobrenome: </span> {user.name.last}</p> 
                <p id="idade"> <span id="spanEdit"> Idade: </span>{user.registered.age}</p> 
                <p id="pais"> <span id="spanEdit"> País:</span> {user.location.country}</p> 
-               <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p> </div> 
+               <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p> 
+               <div id="divBotaoM"><button id="mensagemBotao"> Enviar mensagem </button></div>
+               </div> 
                </div>
-                <button id="mensagem"> Enviar mensagem </button>
                 </div>
+                
               </LocalModal>) : null}
               
           </div>

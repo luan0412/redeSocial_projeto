@@ -104,19 +104,19 @@ p{
     #nome,#sobrenome,#idade,#pais,#usuario{
         text-align: left;
         width: 300px;
-       
+        
         line-height: 40px;
-        margin-left: 20px;
+        margin-left: 10%;
         color: rgb(26, 24, 24);
-        font-size: 27px
+        font-size: 24px
     }
    
    .imagemModalDiv{
-       margin-left: 20%;
+        margin-left: 10%;
    }
         #imagemModal{
             height: auto;
-            width: 200px;
+            width: 260px;
             border: 2px solid transparent;
             border-radius: 100vh;
     }
@@ -182,10 +182,23 @@ p{
     }
 
 
-     #mensagem{
-            margin-top:20px;
-            margin-left: 200px;
-            font-size: 20px;
+     #mensagemBotao{
+           
+        margin-top:20px;
+        font-size: 20px;
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 2%;
+        color: white;
+        background-color: black;
+        font-weight: 500px;
+        
+    }
+
+    .divBotaoM{
+        margin-top:20px;
+        margin-left: 200px;
     }
 //SKELETON
 
