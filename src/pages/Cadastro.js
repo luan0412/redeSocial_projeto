@@ -1,7 +1,8 @@
 import React from 'react';
 import '../css/Cadastro.css';
 import Videofull from '../source/videofull.mp4';
-import Header from '../components/começoFim/Header'
+import Header from '../components/começoFim/Header';
+import Footer from '../components/começoFim/Footer';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -35,7 +36,7 @@ function Cadastro() {
     
       const handleCadastro = data => axios.post("https://start-cadastro.herokuapp.com/create", data)
       .then(() => {
-        history.push("/")
+        history.push("/Login")
       }).catch(() => {
           console.log('nao foi')
       });
@@ -50,7 +51,7 @@ function Cadastro() {
                 <div className="video">
                 </div>
                 <div className="cadastro">
-                    <form action="" id="form" onSubmit={handleSubmit(handleCadastro)}>
+                    <form autocomplete="off" id="form" onSubmit={handleSubmit(handleCadastro)}>
                         <h1>Nova Conta</h1>
                         <fieldset>
                             <input type="text" name="nome" placeholder="Nome" id="nome" {...register('nome') } />
@@ -255,22 +256,20 @@ function Cadastro() {
                         <h2>Gênero:</h2>
                         <fieldset>
                             <div className="field_flex">
-                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino" value="feminino" {...register('genero') } /></label>
-                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino"  value="masculino" {...register('genero') } /></label>
-                            <label  for="neutro">Neutro<input type="radio" name="genero" id="neutro" value="neutro" {...register('genero') } /></label>
+                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino" value="F eminino" {...register('genero') } /></label>
+                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino"  value="Masculino" {...register('genero') } /></label>
+                            <label  for="neutro">Outros<input type="radio" name="genero" id="neutro" value="Outros" {...register('genero') } /></label>
                             </div>
                             <span>{errors.genero?.message}</span>
                         </fieldset>
                             
                         <fieldset className="field_flex">
-                            <button type="submit" id="botao">Cadastre-se</button>
+                            <button type="submit" id="botao">Nova Conta</button>
                         </fieldset>
                             
                         
                         <div id="link">
-                            <Link to="/Login">
-                               <a href="/Login">Já tem uma conta?</a>
-                            </Link>
+                            <button id="botao" type="submit" onClick={() => history.push("/Login")} >Login</button>
                         </div>
                        
                     </form>
@@ -279,6 +278,7 @@ function Cadastro() {
         
   
         </div>
+        <Footer />
         </>
         
     );

@@ -40,7 +40,6 @@ body {
 }
 
 .post-header .details {
-  margin-left: 5%;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -86,7 +85,7 @@ body {
 .comment p {
   border-radius: 19px;
   background: #EEE;
-  margin-left: 3%;
+  margin-left: -1.5%;
   padding: 15px;
   font-size: 15px;
 }
