@@ -12,19 +12,23 @@ function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
+  
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
+            <h1 id="logo2">Free</h1>
           </Link>
 
-          <h1 id="logo2">free</h1>
-          <h1 id="em-d">Em Desenvolvimento</h1>
-          <BarraDeBuscar />
-          
+        <div className="search-exit-area">
+            <BarraDeBuscar />
+            <Link to={SidebarData[3].path} className="exit-icon">
+            
+              <span>{SidebarData[3].title}</span>
+            </Link>
+          </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

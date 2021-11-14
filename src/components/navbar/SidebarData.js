@@ -21,13 +21,13 @@ export const SidebarData = [
     cName: 'nav-text'
   },
 
-  {
-    title: 'Sobre',
-    path: '/Sobre',
-    icon: <AiIcons.AiOutlineExclamation/>,
-    cName: 'nav-text'
-  },
-  
+ 
+    {
+      title: 'Sobre',
+      path: '/Sobre',
+      icon: <AiIcons.AiOutlineExclamation/>,
+      cName: 'nav-text'
+    },
   {
     title: 'Sair',
     path: '/Login',

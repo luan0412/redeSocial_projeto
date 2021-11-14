@@ -7,8 +7,13 @@ p{
 #titulo{
     font-weight: bold;
     font-size: 40px;
+    margin-top: 38px;
+    margin-bottom: 35px;
+    text-align: center;
   
 }
+
+
 .mainDiv{
     margin: 0 auto;
     width: 85%;
@@ -17,7 +22,6 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 100px;
-    
     justify-content: space-between;
     
     
@@ -106,14 +110,13 @@ p{
         color: rgb(26, 24, 24);
         font-size: 27px
     }
-
-    
+   
    .imagemModalDiv{
-       margin-left: 60%;
+       margin-left: 20%;
    }
         #imagemModal{
             height: auto;
-            width: 300px;
+            width: 200px;
             border: 2px solid transparent;
             border-radius: 100vh;
     }
@@ -132,31 +135,32 @@ p{
         width: 30%;
     }
     .container2 {
+        position: relative;
         display: flex;
         align-items: center;
         text-align: center;
         background-color: #fff;
         color: #000;
-        width: 60%;
-        height: 80%;
+        width: 40%;
+        height: 60%;
         border-radius: 70px;
         border: solid black 4px;
         .close {
             font-size: 25px;
-            margin-bottom: 70vh;
             color: rgb(156, 152, 152);
-            padding-left: 20px;
+          
+            position: absolute;
             display: flex;
-            position: relative;
+            top: 40px;
+            right: 30px;
             align-items: center;
             border: none;
             background: transparent;
             cursor: pointer;
             outline: none;
             width: 32px;
-            height: 32px;
-            top: 16px;
-             
+            height: auto;
+           
             &:before,
             &:after {
                 content: "";
@@ -177,6 +181,12 @@ p{
         }
     }
 
+
+     #mensagem{
+            margin-top:20px;
+            margin-left: 200px;
+            font-size: 20px;
+    }
 //SKELETON
 
 .skeleton {
