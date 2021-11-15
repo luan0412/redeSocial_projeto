@@ -71,31 +71,31 @@ body,
 }
 
 .sobreImg1 img:hover{
-    border: 5px solid #ee7652fa;
-    box-shadow: 0 0 15px #ee7652fa;
+    border: 3px solid #ee7652fa;
+    box-shadow: 0 0 20px #ee7652fa;
     transition: all 0.5s ease;
 }
 
 .sobreImg2 img:hover{
-    border: 5px solid #e73c7efa;
-    box-shadow: 0 0 15px #e73c7efa;
+    border: 3px solid #e73c7efa;
+    box-shadow: 0 0 20px #e73c7efa;
     transition: all 0.5s ease;
 }
 
 .sobreImg3 img:hover{
-    border: 5px solid #23d5abf6;
-    box-shadow: 0 0 15px #23d5abf6;
+    border: 3px solid #23d5abf6;
+    box-shadow: 0 0 20px #23d5abf6;
     transition: all 0.5s ease;
 }
 
 .sobreImg4 img:hover{
-    border: 5px solid #23a5d5f6;
-    box-shadow: 0 0 15px #23a5d5f6;
+    border: 3px solid #23a5d5f6;
+    box-shadow: 0 0 20px #23a5d5f6;
     transition: all 0.5s ease;
 }
 
 .sobreImg5 img:hover{
-    border: 5px solid #4dc247;
+    border: 3px solid #4dc247;
     box-shadow: 0 0 15px #4dc247;
     transition: all 0.5s ease;
 }
@@ -108,10 +108,6 @@ body,
     text-align: center;
     margin-top: 1.5%;
     font-family: 'Lobster', cursive;
-}
-
-.nos .sobreImg1 p {
-    font-size: 1.4em;
 }
 
 .sobreImg .boxIcon{
