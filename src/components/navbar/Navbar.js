@@ -23,7 +23,10 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <h1 id="logo2">FREE</h1>
+          
+          <h1 id="logo2" 
+          onClick={() => history.push("/")}
+          >FREE</h1>
 
         <div className="search-exit-area">
             <BarraDeBuscar />

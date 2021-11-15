@@ -60,6 +60,7 @@ body {
   height: 100%;
   max-height: 60px;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .post-content {

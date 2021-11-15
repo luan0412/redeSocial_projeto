@@ -4,7 +4,7 @@ import './Feed.css';
 import PostItem from './PostItem';
 
 import occa from './img/occa.jpeg';
-import henthony from './img/henthony.jpg';
+import henthony from './img/henthony.jpeg';
 import luan from './img/luan.jpg';
 import bruno from './img/bruno.jpg';
 import davi from './img/davi.jpg';

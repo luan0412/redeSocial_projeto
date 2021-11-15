@@ -34,7 +34,7 @@ function EditPost() {
                         <img className="avatar" src={ avata } />
                         <div className="details">
                             <span>Avatar temporário</span>
-                            <span>23:67</span>
+                            <span>--:--</span>
                         </div>
                     </div>
                     <form className="form">
