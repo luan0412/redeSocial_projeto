@@ -5,6 +5,9 @@ import PostList from '../components/feed/PostList';
 import Coment from '../components/feed/FeedComent';
 import EditPost from '../components/feed/EditPost';
 import Perfil from './Perfil';
+import MineAmigos from './MineAmigos';
+import Footer from '../components/começoFim/Footer';
+
 
 
 
@@ -23,9 +26,10 @@ function Home() {
         <PostList />
         </div>
         <div className="direita">
-        <h1 id="em-d2">Em Desenvolvimento</h1>
+        <MineAmigos />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

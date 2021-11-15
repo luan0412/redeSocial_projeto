@@ -2,7 +2,8 @@ import React from "react";
 
 function Sobre(){
  return(
-     <div> 
+     <div>
+         <title>Sobre</title>
          
          <h1> Bruno Amorim</h1>
          <h1> Davi Gonçalves  </h1>

@@ -39,7 +39,7 @@ function EditPost() {
                     </div>
                     <form className="form">
                         <div className="butoes">
-                            <button onClick={() => deletePost(post._id)} id="butt-delet">Delet</button>
+                            <button onClick={() => deletePost(post._id)} id="butt-delet">Apagar</button>
                         </div>
                         <p className="post-content">{post.content}</p>
                     </form>
