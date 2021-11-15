@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../css/Login.css';
 import Video from '../source/videofull.mp4';
+import Header from '../components/começoFim/Header';
+import Footer from '../components/começoFim/Footer';
 
 
 import StartCadastroApi from '../services/StartCadastroApi';
@@ -50,7 +52,7 @@ export default function Login (){
   
     <div> 
       
-      <a className="linklogo" href="" target="" > <h3 className="logo1">FREE</h3> </a>
+    <Header />
     
     </div> 
   
@@ -103,7 +105,7 @@ export default function Login (){
 
   <div className="footer">
       
-      <h5 className="copy">Desenvolvido por Equipe Free</h5>
+       <Footer />
 
     </div>
   

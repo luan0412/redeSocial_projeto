@@ -15,7 +15,13 @@ function Sobre(){
          <a href="https://github.com/PhilipeLima123?tab=repositories" target="_blank" rel="noopener noreferrer"></a>
          <a href="https://www.linkedin.com/in/philipe-lima-470712214/" target="_blank" rel="noopener noreferrer"></a>
          </div>
+        
+        <div>
+       
+        
 
+
+        </div>
 
      </div>
  )
