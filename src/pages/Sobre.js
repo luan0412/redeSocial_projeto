@@ -33,7 +33,7 @@ function Sobre(){
                     <img src={luan} />
                     <p>Luan Felipe</p>
                     <div className="boxIcon">
-                    <a href="https://" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillLinkedin className="sobreIcon"/></a>
+                    <a href="https://www.linkedin.com/in/luan-felipe-6947a9200" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillLinkedin className="sobreIcon"/></a>
                     <a href="https://github.com/luan0412" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillGithub className="sobreIcon sobreIcon2" /></a>
                     </div>
                     
