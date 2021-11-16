@@ -19,7 +19,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.home .container {
+.home .containerHome {
   position: relative;
   width: 100%;
   max-width: 1900px;
@@ -46,7 +46,7 @@ body {
 
 /* =========================================================< Esquerda >============================================ */
 
-.container .esquerda {
+.containerHome .esquerda {
   position: relative;
  
   padding: 1%;
@@ -128,7 +128,7 @@ a:hover {
 
 /* =========================================================< Meio >============================================ */
 
-.container .meio {
+.containerHome .meio {
   position: relative;
   background: rgba(197, 240, 7, 0);
   padding: 1%;
@@ -136,7 +136,7 @@ a:hover {
 
 /* =========================================================< Direita >============================================ */
 
-.container .direita {
+.containerHome .direita {
   position: relative;
   padding: 1%;
 }

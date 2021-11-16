@@ -16,7 +16,7 @@ function Home() {
     <div className='home'>
       <title>Home</title>
       <Navbar />
-      <div className="container">
+      <div className="containerHome">
         <div className="esquerda">
           <Perfil/>
         </div>
