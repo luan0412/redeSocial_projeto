@@ -47,11 +47,11 @@ export default function Login (){
                   <form id="formLogin" onSubmit={handleSubmit(handleLogin)} autocomplete="off">
                       <h3 className="logo2">L O G I N </h3>
                     
-                      <fieldset>
+                      <fieldset >
                         <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
                         <span className="spanLogin">{errors.email?.message}</span>
                       </fieldset>
-                      <fieldset>
+                      <fieldset className="loginFild">
                       <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
                       <span className="spanLogin">{errors.senha?.message}</span>
                       </fieldset>
