@@ -120,3 +120,13 @@ margin-left: 16px;
     font-size: 25px;
     fill: #000;
 }
+
+@media (max-width: 850px){
+    .navbar{
+        width: 100%;
+        align-items: center;
+        
+    }
+   
+  }
+  
