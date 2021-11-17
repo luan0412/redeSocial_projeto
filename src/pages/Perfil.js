@@ -63,7 +63,7 @@ export default function Perfil() {
                     </div>
 
                     <div className="link">
-                        <a href="http://" target="_blank" rel="noopener noreferrer"> Start Latam</a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"> Start</a>
                     </div>
 
                     <div className="link">

@@ -44,6 +44,20 @@ body {
   }
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
 /* =========================================================< Esquerda >============================================ */
 
 .containerHome .esquerda {
@@ -132,6 +146,21 @@ a:hover {
   position: relative;
   background: rgba(197, 240, 7, 0);
   padding: 1%;
+}
+
+@media (max-width: 850px){
+  .master{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 580px){
+  #form{
+      max-width: 350px;
+      height: 70%;
+      width: 100%;
+  }
 }
 
 /* =========================================================< Direita >============================================ */

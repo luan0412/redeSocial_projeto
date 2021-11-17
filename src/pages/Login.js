@@ -4,7 +4,12 @@ import Videofull from '../source/videofull.mp4';
 import Header from '../components/começoFim/Header';
 import Footer from '../components/começoFim/Footer';
 
+
+import StartCadastroApi from '../services/StartCadastroApi';
+
 import { useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -26,11 +31,16 @@ export default function Login (){
     resolver: yupResolver(validar)
   });
 
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [error, setError] = useState(null);
+  const [loaging, setLoaging] = useState(false);
+
   let history = useHistory()
     
- function handleLogin(){
-   history.push ("/")
-     
+   function handleLogin(){
+   
+  history.push("/Home")
   }
 
 
@@ -39,7 +49,7 @@ export default function Login (){
     <title>Login</title>
     <Header />
         <div className="boxLogin">
-            <div className="containerLogin">
+            <div className="container">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
                 </div>
@@ -47,12 +57,12 @@ export default function Login (){
                   <form id="formLogin" onSubmit={handleSubmit(handleLogin)} autocomplete="off">
                       <h3 className="logo2">L O G I N </h3>
                     
-                      <fieldset >
-                        <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
+                      <fieldset>
+                        <input type ="text" placeholder ="E-mail" name="email" {...register('email') } onChange={ (e) => {setEmail(e.target.value)}} />
                         <span className="spanLogin">{errors.email?.message}</span>
                       </fieldset>
-                      <fieldset className="loginFild">
-                      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
+                      <fieldset>
+                      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } onChange={ (e) => {setSenha(e.target.value)}}/>
                       <span className="spanLogin">{errors.senha?.message}</span>
                       </fieldset>
                       <fieldset className="field_flex">

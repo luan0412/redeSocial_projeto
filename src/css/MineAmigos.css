@@ -11,6 +11,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .boxAmigos .amigosTitulo{
@@ -141,3 +142,9 @@
 }
 
 /*===========================</Butao css animação>===================================*/
+
+@media (max-width: 850px){
+    .boxAmigos{
+        display: none;
+    }
+    }
