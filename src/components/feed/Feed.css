@@ -86,7 +86,7 @@ body {
 .comment p {
   border-radius: 19px;
   background: #EEE;
-  margin-left: -1.5%;
+  margin-left: -1%;
   padding: 15px;
   font-size: 15px;
 }
@@ -94,6 +94,7 @@ body {
 .comment span {
   font-weight: bold;
   margin-right: 6px;
+  margin-left: 0%;
 }
 .post-img{
   display: flex;

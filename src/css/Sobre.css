@@ -42,6 +42,7 @@ body,
 .nos .sobreImg{
     margin-right: 2%;
     display: flex;
+    padding: 0.5em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -67,37 +68,45 @@ body,
     max-height: 400px;
     border-radius: 20px;
     animation: 1s clockwise infinite;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
 }
 
-.sobreImg1 img:hover{
+.sobreImg1:hover{
     border: 3px solid #ee7652fa;
     box-shadow: 0 0 20px #ee7652fa;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
+    border-radius: 0px;
 }
 
-.sobreImg2 img:hover{
+.sobreImg2:hover{
     border: 3px solid #e73c7efa;
     box-shadow: 0 0 20px #e73c7efa;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
+    border-radius: 0px;
+
 }
 
-.sobreImg3 img:hover{
+.sobreImg3:hover{
     border: 3px solid #23d5abf6;
     box-shadow: 0 0 20px #23d5abf6;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
+    border-radius: 0px;
+
 }
 
-.sobreImg4 img:hover{
+.sobreImg4:hover{
     border: 3px solid #23a5d5f6;
     box-shadow: 0 0 20px #23a5d5f6;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
+    border-radius: 0px;
+
 }
 
-.sobreImg5 img:hover{
+.sobreImg5:hover{
     border: 3px solid #4dc247;
     box-shadow: 0 0 15px #4dc247;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
+    border-radius: 0px;
 }
 
 
