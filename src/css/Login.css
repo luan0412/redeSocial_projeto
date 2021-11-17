@@ -31,7 +31,7 @@ body,
 
 }
 
-#fundo{
+.containerLogin #fundo{
    position: absolute;
    width: 100%;
    left: 50%;
@@ -191,7 +191,7 @@ body,
 	}
 }
 
-/*@media (max-width: 850px){
+@media (max-width: 850px){
     .containerLogin{
       
         display: flex;
@@ -204,10 +204,10 @@ body,
         background-attachment: fixed;
         background-size: cover;
     }
-    #fundo{
+    .containerLogin #fundo{
         display: none;
     }
-    .video{
+    .containerLogin .video{
         display: none;
     }
     #formLogin{
@@ -226,7 +226,7 @@ body,
         height: 70%;
         width: 100%;
     }
-}*/
+}
 
 
 

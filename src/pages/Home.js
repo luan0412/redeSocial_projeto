@@ -14,7 +14,7 @@ import Footer from '../components/começoFim/Footer';
 function Home() {
   return (
     <div className='home'>
-      <title>Home</title>
+      <title>FREE - Home</title>
       <Navbar />
       <div className="containerHome">
         <div className="esquerda">

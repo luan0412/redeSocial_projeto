@@ -21,7 +21,7 @@ body,
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.containerCadastro{
     position: relative;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ body,
 
 }
 
-#fundo{
+.containerCadastro #fundo{
     position: absolute;
     width: 100%;
     left: 50%;
@@ -44,7 +44,7 @@ body,
 }
 /* =========================================================< Esquerda >============================================ */
 
-.container .video{
+.containerCadastro .video{
     position: relative;
     background: rgba(197, 240, 7, 0);
 }
@@ -52,14 +52,14 @@ body,
 
 /* =========================================================< Direita >============================================ */
 
-.container .cadastro{
+.containerCadastro .cadastro{
     position: relative;
     background: #fc000000;
     padding: 20px;
 }
 
 
-#form{
+#formCadastro{
     background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -74,7 +74,7 @@ body,
     
 }
 
-#form h1{
+#formCadastro h1{
     color: #1c1e21;
     display: block;
     font-size: 40px;
@@ -87,7 +87,7 @@ body,
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-#form h2{
+#formCadastro h2{
     display: block;
     font-size: 15px;
     font-weight: 900;
@@ -133,27 +133,27 @@ label{
     justify-content: space-around;
 }
 
-#form select,
-#form label,
-#form input[type="text"],  
+#formCadastro select,
+#formCadastro label,
+#formCadastro input[type="text"],  
 #form button[type="submit"],
-#form input[type="email"],
-#form input[type="password"]{
+#formCadastro input[type="email"],
+#formCadastro input[type="password"]{
     font: 600 15px/18px 'Roboto', sans-serif;
 }
 
 
-#form input[type="text"]::placeholder,  
-#form button[type="submit"]::placeholder,
-#form input[type="email"]::placeholder,
-#form input[type="password"]::placeholder{
+#formCadastro input[type="text"]::placeholder,  
+#formCadastro button[type="submit"]::placeholder,
+#formCadastro input[type="email"]::placeholder,
+#formCadastro input[type="password"]::placeholder{
     font: 600 15px/18px 'Roboto', sans-serif;
     color: #1c1e21;
 }
 
-#form input[type="text"],
-#form input[type="email"],
-#form input[type="password"]{
+#formCadastro input[type="text"],
+#formCadastro input[type="email"],
+#formCadastro input[type="password"]{
     width: 100%;
     border: none;
     border-bottom: 2px solid #1c1e21;
@@ -164,8 +164,8 @@ label{
     padding: 10px;
 }
 
-#form select,
-#form label{
+#formCadastro select,
+#formCadastro label{
     width: 100%;
     border: none;
     border-bottom: 2px solid #1c1e21;
@@ -177,30 +177,30 @@ label{
     cursor: pointer;
 }
 
-#form input[type="text"]:hover,
-#form input[type="email"]:hover,
-#form input[type="password"]:hover,
-#form select:hover, 
-#form label:hover{
+#formCadastro input[type="text"]:hover,
+#formCadastro input[type="email"]:hover,
+#formCadastro input[type="password"]:hover,
+#formCadastro select:hover, 
+#formCadastro label:hover{
     border: none;
     border-bottom: 2px solid #1c1d20c4;
     border-left: 2px solid #1c1d20d2;
     transition: border-color 0.3s ease-in-out;  
 }
 
-#form input[type="text"]:focus,
-#form input[type="email"]:focus,
-#form input[type="password"]:focus,
-#form select{
+#formCadastro input[type="text"]:focus,
+#formCadastro input[type="email"]:focus,
+#formCadastro input[type="password"]:focus,
+#formCadastro select{
     outline: none;
 }
-#form input[type=radio]{
+#formCadastro input[type=radio]{
     border: 0px;
     width: 100%;
     height: 1.5em;
 }
 
-#form button[type="submit"]{
+#formCadastro button[type="submit"]{
     cursor: pointer;
     width: 50%;
     border-radius: 5px;
@@ -213,15 +213,15 @@ label{
     font-weight: 500;
 }
 
-#form button[type="submit"]:hover{
+#formCadastro button[type="submit"]:hover{
     box-shadow: inset 0 2px 4px rgb(10, 10, 10);
     transition: background-color 0.3s ease-in-out;
 }
-#form button[type="submit"]:active{
+#formCadastro button[type="submit"]:active{
     box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.582);
 }
 
-#form #link{
+#formCadastro #link{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -250,7 +250,7 @@ label{
 
 
 @media (max-width: 850px){
-    .container{
+    .containerCadastro{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -261,13 +261,13 @@ label{
         background-attachment: fixed;
         background-size: cover;
     }
-    #fundo{
+    .containerCadastro #fundo{
         display: none;
     }
-    .video{
+    .containerCadastro .video{
         display: none;
     }
-    .cadastro{
+    .containerCadastro .cadastro{
         width: 100%;
         padding: 10%;
         display: flex;
@@ -275,55 +275,55 @@ label{
         justify-content: center;
         height: 100vh;
     }
-    #form{
+    .containerCadastro #formCadastro{
         max-width: 300px;
         width: 100%;
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
-    #form h1{
+     #formCadastro h1{
         font-size: 1.5em;
         font-family: 'Lobster', cursive;
         font-family: 'Rampart One', cursive;
         margin-bottom: 4%;
     }
     
-    #form h2{
+    #formCadastro h2{
         font-size: 0.6em;
         margin-bottom: 3%;
         margin-left: 1%;
     }
     
-    fieldset{
+    #formCadastro fieldset{
         margin: 0 0 8px;
         min-width: 100%;
         padding: 0;
     }
     
-    fieldset span{
+    #formCadastro fieldset span{
         color: #fff;
         font-weight: 520;
         font-size: 10px;
     }
     
-    #form select,
-    #form label,
-    #form input{
+    #formCadastro select,
+    #formCadastro label,
+    #formCadastro input{
         font: 600 10px/14px 'Roboto', sans-serif;
     }
     
     
-    #form input[type="text"]::placeholder,  
-    #form button[type="submit"]::placeholder,
-    #form input[type="email"]::placeholder,
-    #form input[type="password"]::placeholder{
+    #formCadastro input[type="text"]::placeholder,  
+    #formCadastro button[type="submit"]::placeholder,
+    #formCadastro input[type="email"]::placeholder,
+    #formCadastro input[type="password"]::placeholder{
         font: 600 10px/14px 'Roboto', sans-serif;
     }
     
-    #form input[type="text"],
-    #form input[type="email"],
-    #form input[type="password"]{
+    #formCadastro input[type="text"],
+    #formCadastro input[type="email"],
+    #formCadastro input[type="password"]{
         border-bottom: 1px solid #1c1e21;
         border-left: 1px solid #1c1e21;
         border-radius: 5px;
@@ -331,19 +331,19 @@ label{
         padding: 10px;
     }
     
-    #form select,
-    #form label{
+    #formCadastro select,
+    #formCadastro label{
         border-bottom: 1px solid #1c1e21;
         border-left: 1px solid #1c1e21;
         border-radius: 5px;
         padding: 10px;
     }
     
-    #form input[type=radio]{
+    #formCadastro input[type=radio]{
         height: 1em;
     }
     
-    #form button[type="submit"]{
+    #formCadastro button[type="submit"]{
         width: 50%;
         border-radius: 5px;
         margin: 0 0 5px;
@@ -351,7 +351,7 @@ label{
         font-size: 10px;
     }
     
-    #form #link{
+    #formCadastro #link{
         display: flex;
         justify-content: center;
         width: 100%;

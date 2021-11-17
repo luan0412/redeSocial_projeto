@@ -46,13 +46,13 @@ function Cadastro() {
         <>
         <Header />
         <div className="Cadastre">
-        <title>Cadastro</title>
-            <div className="container">
+        <title>FREE - Cadastro</title>
+            <div className="containerCadastro">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
                 </div>
                 <div className="cadastro">
-                    <form autocomplete="off" id="form" onSubmit={handleSubmit(handleCadastro)}>
+                    <form autocomplete="off" id="formCadastro" onSubmit={handleSubmit(handleCadastro)}>
                         <h1>Nova Conta</h1>
                         <fieldset>
                             <input type="text" name="nome" placeholder="Nome" id="nome2" {...register('nome') } />
