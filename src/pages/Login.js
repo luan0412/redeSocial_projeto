@@ -38,17 +38,9 @@ export default function Login (){
 
   let history = useHistory()
     
-  async function handleLogin(){
-    await axios.get("https://start-cadastro.herokuapp.com/list", {
-      params: {
-        email: email,
-        senha: senha
-      }
-    }).then(response => {
-      console.log(response.data)
-    }).catch(err =>{
-      console.log(err)
-    })
+   function handleLogin(){
+   
+  history.push("/Home")
   }
 
 

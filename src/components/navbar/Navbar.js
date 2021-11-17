@@ -25,12 +25,12 @@ function Navbar() {
           </Link>
           
           <h1 id="logo2" 
-          onClick={() => history.push("/")}
+          onClick={() => history.push("/Home")}
           >FREE</h1>
 
         <div className="search-exit-area">
             <BarraDeBuscar />
-            <div onClick={() => history.push("/Login")} className="exit-icon">
+            <div onClick={() => history.push("/")} className="exit-icon">
               <span id="linkSair">Sair</span>
               <BsIcons.BsDoorClosed id="iconSair" />
             </div>

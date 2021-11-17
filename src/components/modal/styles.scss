@@ -5,7 +5,9 @@ p{
 }
 
 #titulo{
-    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rampart One', cursive;
+    font-weight: 600;
     font-size: 40px;
     margin-top: 38px;
     margin-bottom: 35px;
@@ -101,7 +103,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    #nome,#sobrenome,#idade,#pais,#usuario{
+    #nome,#sobrenome,#pais,#usuario{
         text-align: left;
         width: 300px;
         
@@ -141,7 +143,7 @@ p{
         text-align: center;
         background-color: #fff;
         color: #000;
-        width: 40%;
+        width: 55%;
         height: 60%;
         border-radius: 70px;
         border: solid black 4px;
@@ -193,7 +195,7 @@ p{
         color: white;
         background-color: black;
         font-weight: 500px;
-        
+        cursor: pointer;
     }
 
     .divBotaoM{
