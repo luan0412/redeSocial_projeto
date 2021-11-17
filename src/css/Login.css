@@ -190,7 +190,8 @@ fieldset{
 }
 
 @media (max-width: 850px){
-    .container{
+    .containerLogin{
+      
         display: flex;
         align-items: center;
         justify-content: center;
@@ -211,17 +212,23 @@ fieldset{
         width: 100%;
         padding: 10%;
     }
-    #form{
+    #formLogin{
         max-width: 400px;
         width: 100%;
     }
     
+    .login{
+       width: 100%;
+    }
 }
 
 @media (max-width: 580px){
-    #form{
+    #formLogin{
         max-width: 350px;
         height: 70%;
         width: 100%;
     }
 }
+
+
+

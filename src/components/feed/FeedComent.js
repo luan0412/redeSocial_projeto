@@ -12,7 +12,7 @@ import * as yup from 'yup';
 
 
 const  schema = yup.object().shape({
-    content: yup.string().required('O campo nome é obrigatório')
+    content: yup.string().required('Opa! este campo está vazio.')
 })
 
 var data = new Date();
