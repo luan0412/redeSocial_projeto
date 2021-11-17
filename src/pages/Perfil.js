@@ -63,15 +63,15 @@ export default function Perfil() {
                     </div>
 
                     <div className="link">
-                        <a href="http://" target="_blank" rel="noopener noreferrer"> Start</a>
+                        <a href="https://www.instagram.com/start_recife/" target="_blank" rel="noopener noreferrer"> Start</a>
                     </div>
 
                     <div className="link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Rede Cidadã</a>
+                    <a href="https://www.redecidada.org.br/" target="_blank" rel="noopener noreferrer">Rede Cidadã</a>
                     </div>
 
                     <div className="link"> 
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Accenture</a>
+                        <a href="https://www.accenture.com/br-pt" target="_blank" rel="noopener noreferrer">Accenture</a>
                     </div>
                 
                 </div>
