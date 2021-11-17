@@ -20,10 +20,10 @@ body,
    font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.containerLogin{
    position: relative;
    width: 100%;
-   min-height: 600px;
+   height: 75vh;
    background: rgba(139, 141, 19, 0);
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -44,7 +44,7 @@ body,
 
 /* =========================================================< Esquerda >============================================ */
 
-.container .video{
+.containerLogin .video{
    position: relative;
    background: rgba(197, 240, 7, 0);
 }
@@ -52,7 +52,7 @@ body,
 
 /* =========================================================< Direita >============================================ */
 
-.container .login{
+.containerLogin .login{
    position: relative;
    background: #fc000000;
    padding: 20px;
@@ -77,12 +77,16 @@ body,
   
 }
 
-fieldset{
+#formLogin fieldset{
    border: medium none !important;
    margin: 0 0 8px;
    min-width: 100%;
    padding: 0;
    width: 100%;
+}
+
+#formLogin .loginFild{
+   margin-top: 10%;
 }
 
 .field_flex{
@@ -99,7 +103,8 @@ fieldset{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0);
     margin: 0 0 2%;
-    padding: 10px; 
+    padding: 10px;
+    
 }
 
 #formLogin input::placeholder{
@@ -136,6 +141,8 @@ fieldset{
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
+    margin-top: 5%; 
+ 
 }
 
 #formLogin button:hover{
@@ -156,7 +163,7 @@ fieldset{
 .logo2{
    color: #000000;
     display: block;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     font-family: 'Lobster', cursive;
     font-family: 'Rampart One', cursive;
@@ -184,8 +191,9 @@ fieldset{
 	}
 }
 
-@media (max-width: 850px){
-    .container{
+/*@media (max-width: 850px){
+    .containerLogin{
+      
         display: flex;
         align-items: center;
         justify-content: center;
@@ -202,21 +210,23 @@ fieldset{
     .video{
         display: none;
     }
-    .cadastro{
-        width: 100%;
-        padding: 10%;
-    }
-    #form{
+    #formLogin{
         max-width: 400px;
         width: 100%;
     }
     
+    .login{
+       width: 100%;
+    }
 }
 
 @media (max-width: 580px){
-    #form{
+    #formLogin{
         max-width: 350px;
         height: 70%;
         width: 100%;
     }
-}
+}*/
+
+
+
