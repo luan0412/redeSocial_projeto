@@ -173,3 +173,20 @@ textarea::placeholder{
 #butt-delet:active{
   background-color: #867474ce;
 }
+
+@media (max-width: 812px){
+.post{
+      display: flex;
+      font-size: 10px;
+      flex-direction: column;
+      width: 600px;
+      margin:30px;
+     
+  }
+  .buscar{
+    display: none;
+  }
+  .ico{
+    display: none;
+  }
+}
