@@ -71,19 +71,22 @@ body,
    border-radius: 20px;
    max-width: 450px;
    width: 100%;
-   height: 55vh;
    margin: 0 auto;
    position: relative;
    
   
 }
 
-fieldset{
+#formLogin fieldset{
    border: medium none !important;
    margin: 0 0 8px;
    min-width: 100%;
    padding: 0;
    width: 100%;
+}
+
+#formLogin .loginFild{
+   margin-top: 10%;
 }
 
 .field_flex{
@@ -101,7 +104,6 @@ fieldset{
     background-color: rgba(255, 255, 255, 0);
     margin: 0 0 2%;
     padding: 10px;
-    margin-top: 10%; 
     
 }
 
@@ -189,7 +191,7 @@ fieldset{
 	}
 }
 
-@media (max-width: 850px){
+/*@media (max-width: 850px){
     .containerLogin{
       
         display: flex;
@@ -208,10 +210,6 @@ fieldset{
     .video{
         display: none;
     }
-    .cadastro{
-        width: 100%;
-        padding: 10%;
-    }
     #formLogin{
         max-width: 400px;
         width: 100%;
@@ -228,7 +226,7 @@ fieldset{
         height: 70%;
         width: 100%;
     }
-}
+}*/
 
 
 
