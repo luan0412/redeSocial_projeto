@@ -4,12 +4,7 @@ import Videofull from '../source/videofull.mp4';
 import Header from '../components/começoFim/Header';
 import Footer from '../components/começoFim/Footer';
 
-
-import StartCadastroApi from '../services/StartCadastroApi';
-
 import { useHistory } from 'react-router-dom'
-import { Link } from 'react-router-dom';
-import axios from 'axios';
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -31,24 +26,10 @@ export default function Login (){
     resolver: yupResolver(validar)
   });
 
-  const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
-  const [error, setError] = useState(null);
-  const [loaging, setLoaging] = useState(false);
-
   let history = useHistory()
     
-  async function handleLogin(){
-    await axios.get("https://start-cadastro.herokuapp.com/list", {
-      params: {
-        email: email,
-        senha: senha
-      }
-    }).then(response => {
-      console.log(response.data)
-    }).catch(err =>{
-      console.log(err)
-    })
+  function handleLogin(){
+    
   }
 
 
@@ -66,11 +47,11 @@ export default function Login (){
                       <h3 className="logo2">L O G I N </h3>
                     
                       <fieldset>
-                        <input type ="text" placeholder ="E-mail" name="email" {...register('email') } onChange={ (e) => {setEmail(e.target.value)}} />
+                        <input type ="text" placeholder ="E-mail" name="email" {...register('email') } />
                         <span className="spanLogin">{errors.email?.message}</span>
                       </fieldset>
                       <fieldset>
-                      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } onChange={ (e) => {setSenha(e.target.value)}}/>
+                      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } />
                       <span className="spanLogin">{errors.senha?.message}</span>
                       </fieldset>
                       <fieldset className="field_flex">
