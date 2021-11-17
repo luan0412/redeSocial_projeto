@@ -36,7 +36,7 @@ function Cadastro() {
     
       const handleCadastro = data => axios.post("https://start-cadastro.herokuapp.com/create", data)
       .then(() => {
-        history.push("/Login")
+        history.push('/')
       }).catch(() => {
           console.log('nao foi')
       });
@@ -274,7 +274,7 @@ function Cadastro() {
                             
                         
                         <div id="link">
-                            <button id="botao" type="submit" onClick={() => history.push("/Login")} >Login</button>
+                            <button id="botao" type="submit" onClick={() => history.push("/")} >Login</button>
                         </div>
                        
                     </form>
