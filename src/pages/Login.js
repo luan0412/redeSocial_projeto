@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../css/Login.css';
-import Video from '../source/videofull.mp4';
+import Videofull from '../source/videofull.mp4';
 import Header from '../components/começoFim/Header';
 import Footer from '../components/começoFim/Footer';
 
@@ -33,99 +33,60 @@ export default function Login (){
 
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-  console.log(senha)
+  const [error, setError] = useState(null);
+  const [loaging, setLoaging] = useState(false);
 
   let history = useHistory()
     
-  function handleLogin(){
-   
-       history.push("/")
-    
+  async function handleLogin(){
+    await axios.get("https://start-cadastro.herokuapp.com/list", {
+      params: {
+        email: email,
+        senha: senha
+      }
+    }).then(response => {
+      console.log(response.data)
+    }).catch(err =>{
+      console.log(err)
+    })
   }
 
 
-  return (<div>
-  
-  <title>Login</title>
-  
-  <header> 
-  
-    <div> 
-      
+  return (
+    <>
+    <title>Login</title>
     <Header />
-    
-    </div> 
+        <div className="boxLogin">
+            <div className="containerLogin">
+                <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
+                <div className="video">
+                </div>
+                <div className="login">
+                  <form id="formLogin" onSubmit={handleSubmit(handleLogin)} autocomplete="off">
+                      <h3 className="logo2">L O G I N </h3>
+                    
+                      <fieldset>
+                        <input type ="text" placeholder ="E-mail" name="email" {...register('email') } onChange={ (e) => {setEmail(e.target.value)}} />
+                        <span className="spanLogin">{errors.email?.message}</span>
+                      </fieldset>
+                      <fieldset>
+                      <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } onChange={ (e) => {setSenha(e.target.value)}}/>
+                      <span className="spanLogin">{errors.senha?.message}</span>
+                      </fieldset>
+                      <fieldset className="field_flex">
+                      <button className="botaoentrar" type="submit">Entrar</button>
+                      </fieldset>
+                      <div className="linhahorizontal"> </div>
+                      <fieldset className="field_flex">
+                          <button onClick={() => history.push("/Cadastro")} >Cadastre-se</button>
+                      </fieldset>
+                    </form>
+                </div>
+            </div>
+        
   
-  </header>
-  
-  
-  <div className ="main">
-  
-      
-    
-      <video  autoPlay loop muted > 
-    
-        <source className="video1"  src= {Video} type="video/mp4"/>
-  
-      </video>
-  
-  
-  
-  <form id="formLogin" onSubmit={handleSubmit(handleLogin)} autocomplete="off">
-     
-     <h3 className="logo2">L O G I N </h3>
-  
-     <div> <span className="spanLogin">{errors.email?.message}</span> </div>
-     <div className = "campoemail"  >
-     <input type ="text" placeholder ="E-mail" name="email" {...register('email') } onChange={ (e) => {setEmail(e.target.value)}} />
-    
-     </div>
-  
-     <div className="camposenha">
-     <div> <span className="spanLogin">{errors.senha?.message}</span> </div>
-     <input type ="password" placeholder = "Senha" name="senha" {...register('senha') } onChange={ (e) => {setSenha(e.target.value)}}/>
-    
-     </div>
-    <button className="botaoentrar" type="submit">Entrar</button>
-  
-    <div className="linhahorizontal"> </div>   
-    
-  
-    <div>
-      <Link to="/Cadastro">
-        <button className ="botacadastro" >Cadastre-se</button>
-      </Link>
-    </div>
-  </form>
-
-   
-  
-  </div>
-
-
-  <div className="footer">
-      
-       <Footer />
-
-    </div>
-  
-  
-  
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </div>)
-  
-  }
+        </div>
+        <Footer />
+    </>
+  );  
+}

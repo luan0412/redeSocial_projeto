@@ -1,62 +1,107 @@
+*{
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
+html,
+body, 
+#root{
+   min-height: 100vh;
+}
 
-body{ 
-  
-    background-color:rgb(218, 209, 209);
-    margin: 0 ;
-    padding: 0;
-    box-sizing: border-box;
-      
- }
- 
- 
- 
- .main{
+.boxLogin{
    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
    width: 100%;
+   font-family: 'Roboto', sans-serif;
+}
+
+.containerLogin{
+   position: relative;
+   width: 100%;
+   height: 75vh;
+   background: rgba(139, 141, 19, 0);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   box-shadow: rgba(0, 0, 0, 0.1);
+
+}
+
+#fundo{
+   position: absolute;
+   width: 100%;
+   left: 50%;
+   top: 50%;
+   height: 100%;
+   object-fit: cover;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
+/* =========================================================< Esquerda >============================================ */
+
+.containerLogin .video{
+   position: relative;
+   background: rgba(197, 240, 7, 0);
+}
+
+
+/* =========================================================< Direita >============================================ */
+
+.containerLogin .login{
+   position: relative;
+   background: #fc000000;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+}
+ 
+
+#formLogin{  
    background: linear-gradient(-45deg, #ee7652fa, #e73c7efa, #23a5d5f6, #23d5abf6);
-   background-size: 400% 400%;
-   animation: gradient 15s ease infinite;
-    border: solid black;
-    border-left: none;
-    border-right: none;
-   
-   
-    
-    
- 
- }
- 
- video{
-    width: 70%;
- 
-   
-    
- 
- 
- }
- 
- 
- form{  
-    position: relative;
-    width: 100%;
-    margin-top: 10%;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+   padding: 2%;
+   margin: 0 auto;
+   box-shadow: 0 0 2px 0 rgba(0,0,0,0.2) rgba(0,0,0,0.24);
+   border-radius: 20px;
+   max-width: 450px;
+   width: 100%;
+   height: 55vh;
+   margin: 0 auto;
+   position: relative;
    
   
- }
+}
+
+fieldset{
+   border: medium none !important;
+   margin: 0 0 8px;
+   min-width: 100%;
+   padding: 0;
+   width: 100%;
+}
+
+.field_flex{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
  
 #formLogin input{
-   width: 64%;
-   padding: 2%;
-   position: relative;
-   margin-bottom: 2%;
-   background-color: whitesmoke;
-   border: none;
-   left: 20%;
-   border-bottom: 2px solid #1c1e21;
-   border-left: 2px solid #1c1e21;
-   border-radius: 5px;
-   background-color: rgba(255, 255, 255, 0);  
+   width: 100%;
+    border: none;
+    border-bottom: 2px solid #1c1e21;
+    border-left: 2px solid #1c1e21;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 0 2%;
+    padding: 10px;
+    margin-top: 10%; 
+    
 }
 
 #formLogin input::placeholder{
@@ -80,50 +125,21 @@ body{
    outline: none;
 }
 
- /*.botaoentrar{
-    width: 64%;
-    padding: 2%;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    left: 20%;
-    margin-top: 4%;
-  
- }
-
- 
- 
- .botacadastro{
-   width: 30%;
-   padding: 2%;
-   margin-top: 10%;
-   border-radius: 10%;
-   border: none;
-   cursor: pointer;
-   font-size: 14px;
-   position: relative;
-   left: 20%;
-   margin-top: 4%;
- }*/
 
 
 #formLogin button{
    cursor: pointer;
-   width: 64%;
-   border-radius: 5px;
-   border: none;
-   background-color: #1c1e21;
-   color: #fff;
-   padding: 2%;
-   font-size: 16px;
-   font-weight: 500;
-   position: relative;
-   left: 20%;
-   margin-top: 4%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    background-color: #1c1e21;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5%; 
+ 
 }
 
 #formLogin button:hover{
@@ -135,304 +151,76 @@ body{
 }
  
  .linhahorizontal{
-    width: 80%;
-    border: 1px solid black;
-    margin-top: 8%;
-    margin-left:10%;
- }
- 
- @keyframes gradient {
-     0% {
-         background-position: 0% 50%;
-     }
-     50% {
-         background-position: 100% 50%;
-     }
-     100% {
-         background-position: 0% 50%;
-     }
- }
- 
- 
+   width: 100%;
+   border: 1px solid black;
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
 
- 
- 
- .logo1{
- 
-    color: black;
+.logo2{
+   color: #000000;
+    display: block;
+    font-size: 50px;
+    font-weight: 600;
     font-family: 'Lobster', cursive;
     font-family: 'Rampart One', cursive;
-    font-size: 40px;
-    margin: 0 auto;
-    text-align: start;
-    background-color: gainsboro;
-    width: 100%;
-    padding: 2%;
-    
-   
-   
-    
- 
- 
- 
- 
- }
- 
- .logo2{
-    color: black;
-    font-family: 'Lobster', cursive;
-    font-family: 'Rampart One', cursive;
-    font-size: 49px;
-    margin-top: -15%;
-    padding-bottom: 5%;
     text-align: center;
- }
- 
- .linklogo{
-
-  text-decoration: none;
-  
- 
- }
- 
-
-
-
- 
- 
- .copy{
-   position: absolute;
-   bottom: 1%;
-   right: 44%;
-   
- }
-
-
-
-
-
+    margin: 0 auto;
+    margin-bottom: 4%;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
 .spanLogin{
-    margin: 20%;
-    color: white;
-   
+   color: #fff;
+   font-weight: 520;
+}
 
- }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- @media  (max-width:1024px){
-    .main{ 
-        
-       margin-top: 25%;
-      
+/* =========================================================< @ midea @ >============================================ */
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 850px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url(../source/hoian.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #fundo{
+        display: none;
+    }
+    .video{
+        display: none;
+    }
+    .cadastro{
+        width: 100%;
+        padding: 10%;
+    }
+    #form{
+        max-width: 400px;
+        width: 100%;
     }
     
-    .spanLogin{
-       margin: 17%;
-    }
- }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- @media  (max-width:1024px){
-    video{ 
-        
-       min-width: 70%;
-      
-    }
- }
- 
- 
- 
- @media  (max-width:768px){
-    .main{ 
-        
-       margin-top: 0%;
-       
-      
-    }
-   .logo2{
-      margin: 1%;
-   }
+}
 
-
-
-    header{
-       display: none;
+@media (max-width: 580px){
+    #form{
+        max-width: 350px;
+        height: 70%;
+        width: 100%;
     }
-    .footer{
-       display: none;
-    }
- }
- 
- 
- @media  (max-width:1024px){
-    .botacadastro{ 
-        
-       margin-bottom: 1%;
-      
-    }
-
-    .main{
-       margin-top: 15%;
-    }
- }
- 
- 
- 
- @media  (max-width:768px){
-    video{ 
-        
-      margin-top: 60%;
-      width: 100%;
-      position: absolute;
-      
-    }
- }
- 
- 
- @media  (max-width:768px){
-    .logo1{ 
-        
-      margin-top: 60%;
-      width: 100%;
-      position: absolute;
-      
-    }
- }
- 
- 
- 
- @media  (max-width:768px){
-    .main{ 
-        
-       width: 100%;
-       height: 100vh;
-       margin: 0 auto;
-      
-    }
- }
- 
- 
- @media  (max-width:768px){
-    .botacadastro{ 
-        
-      margin-top: 5%;
-      
-    }
- }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- @media  (max-width:425px){
-    video{ 
-        
- display: none;
-    }
- }
- 
- 
- 
- 
- 
- 
- 
- @media  (max-width:425px){
-    .logo1{ 
-        
-   display: none;
-    }
- }
- 
- 
- 
- @media  (max-width:425px){
-    .main{ 
-        
-       width: 100%;
-       height: 100vh;
-       margin: 0 auto;
-      
-    }
- }
- 
- 
- @media  (max-width:425px){
-    .botacadastro{ 
-        
-      margin-top: 5%;
-      
-    }
- }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- @media  (max-width:726px){
-    .logo1{ 
-        
- display: none;
-    }
- }
- 
- @media  (max-width:850px){
-    video{ 
-        
-  
-       top: 20%;
-    }
- }
- 
- 
- 
- 
- 
- 
- @media  (max-width:580px){
-    video{ 
-        
- display: none;
-    }
- }
+}

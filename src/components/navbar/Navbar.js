@@ -1,33 +1,39 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import BarraDeBuscar from '../buscar/Buscar';
+import * as BsIcons from "react-icons/bs";
 
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  let history = useHistory();
   
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: '#000'}}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
-            <h1 id="logo2">Free</h1>
           </Link>
+          
+          <h1 id="logo2" 
+          onClick={() => history.push("/")}
+          >FREE</h1>
 
         <div className="search-exit-area">
             <BarraDeBuscar />
-            <Link to={SidebarData[3].path} className="exit-icon">
-            
-              <span>{SidebarData[3].title}</span>
-            </Link>
+            <div onClick={() => history.push("/Login")} className="exit-icon">
+              <span id="linkSair">Sair</span>
+              <BsIcons.BsDoorClosed id="iconSair" />
+            </div>
           </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

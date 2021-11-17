@@ -60,6 +60,7 @@ body {
   height: 100%;
   max-height: 60px;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .post-content {
@@ -94,12 +95,16 @@ body {
   font-weight: bold;
   margin-right: 6px;
 }
+.post-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #img01{
   margin-top: 3%;
   width: auto;
   height: 300px;
   border-radius: 10px;
-
   
 }
 textarea {
@@ -145,12 +150,25 @@ textarea::placeholder{
   margin: 1%;
   padding: 5px;
   font-size: 18px;
-}
-
-#butt-edit{
-  background-color: #3030e4;
+  font-weight: 600;
 }
 
 #butt-delet{
-  background-color: #e72d2d;
+  background-color: #fd4242;
+}
+
+.form button:hover{
+  background-color: #1f810bbd;
+}
+
+#butt-delet:hover{
+  background-color: #fd4242d2;
+}
+
+.form button:active{
+  background-color: #1f810bbd;
+}
+
+#butt-delet:active{
+  background-color: #867474ce;
 }

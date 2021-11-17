@@ -34,12 +34,12 @@ function EditPost() {
                         <img className="avatar" src={ avata } />
                         <div className="details">
                             <span>Avatar temporário</span>
-                            <span>23:67</span>
+                            <span>--:--</span>
                         </div>
                     </div>
                     <form className="form">
                         <div className="butoes">
-                            <button onClick={() => deletePost(post._id)} id="butt-delet">Delet</button>
+                            <button onClick={() => deletePost(post._id)} id="butt-delet">Apagar</button>
                         </div>
                         <p className="post-content">{post.content}</p>
                     </form>

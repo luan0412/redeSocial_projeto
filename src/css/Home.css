@@ -49,11 +49,12 @@ body {
 .container .esquerda {
   position: relative;
  
-  padding: 3%;
+  padding: 1%;
 }
 
 .master {
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-bottom: 5px;
   border-radius: 9px;
   background: white;
   padding: 3%;
@@ -137,13 +138,5 @@ a:hover {
 
 .container .direita {
   position: relative;
-  padding: 3%;
-}
-
-#em-d2 {
-  font-size: 30px;
-  color: rgba(5, 5, 5, 0.89);
-  margin-top: 50%;
-  margin-left: 20%;
-  transform: rotate(-45deg);
+  padding: 1%;
 }

@@ -8,24 +8,32 @@
     width: 300px;
     padding: 10px 0;
     padding-left: 10px;
-    
-
+    border: solid 2px #000;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
 }
+
+.boxBusca .buscar::placeholder{
+    font: 600 16px/18px 'Roboto', sans-serif;
+    color: #1c1e21;
+}
+
 .boxBusca .icon{
     margin-top:10px;
     align-items: center;
     display: block;
-    font-size: 30px;
-    margin-right: 10px;
+    font-size: 35px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
 
 .boxBusca .ico{
-    fill: #fff;
+    fill: #000;
+}
+
+@media (max-width: 580px){
+    .boxBusca {
+        display: none;
     }
-    @media (max-width: 580px){
-        .boxBusca{
-            display: none;
-        }
-    }
+}

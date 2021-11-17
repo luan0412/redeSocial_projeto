@@ -1,0 +1,176 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body, 
+#root{
+    min-height: 100vh;
+}
+
+.boxSobre{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.boxSobre h1{
+    margin-top: 2%;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.boxSobre .nos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nos .sobreImg{
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s box-shadow;
+    border-radius: 20px;
+}
+
+
+
+
+.nos .sobreImg5{
+    margin-right: 1%;
+}
+
+.nos .sobreImg1{
+    margin-left: 1%;
+}
+
+.nos .sobreImg img{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+    border-radius: 20px;
+    animation: 1s clockwise infinite;
+    transition: all 0.5s ease;
+}
+
+.sobreImg1 img:hover{
+    border: 3px solid #ee7652fa;
+    box-shadow: 0 0 20px #ee7652fa;
+    transition: all 0.5s ease;
+}
+
+.sobreImg2 img:hover{
+    border: 3px solid #e73c7efa;
+    box-shadow: 0 0 20px #e73c7efa;
+    transition: all 0.5s ease;
+}
+
+.sobreImg3 img:hover{
+    border: 3px solid #23d5abf6;
+    box-shadow: 0 0 20px #23d5abf6;
+    transition: all 0.5s ease;
+}
+
+.sobreImg4 img:hover{
+    border: 3px solid #23a5d5f6;
+    box-shadow: 0 0 20px #23a5d5f6;
+    transition: all 0.5s ease;
+}
+
+.sobreImg5 img:hover{
+    border: 3px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+
+
+
+.nos .sobreImg p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1.5%;
+    font-family: 'Lobster', cursive;
+}
+
+.sobreImg .boxIcon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5%;
+}
+
+.sobreImg .boxIcon a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.sobreImg .sobreIcon{
+    font-size: 2.5em;  
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+}
+
+.sobreImg .sobreIcon2{
+    margin-right: 0rem;
+    border-radius: 50%;
+}
+
+.sobreImg1 .sobreIcon:hover{
+    fill: whitesmoke;
+    background-color: #000;
+    border: 3px solid #ee7652fa;
+    box-shadow: 0 0 15px #ee7652fa;
+    transition: all 0.5s ease;
+}
+
+.sobreImg2 .sobreIcon:hover{
+    fill: whitesmoke;
+    background-color: #000;
+    border: 3px solid #e73c7efa;
+    box-shadow: 0 0 15px #e73c7efa;
+    transition: all 0.5s ease;
+}
+
+.sobreImg3 .sobreIcon:hover{
+    fill: whitesmoke;
+    background-color: #000;
+    border: 3px solid #23d5abf6;
+    box-shadow: 0 0 15px #23d5abf6;
+    transition: all 0.5s ease;
+}
+
+.sobreImg4 .sobreIcon:hover{
+    fill: whitesmoke;
+    background-color: #000;
+    border: 3px solid #23a5d5f6;
+    box-shadow: 0 0 15px #23a5d5f6;
+    transition: all 0.5s ease;
+}
+
+.sobreImg5 .sobreIcon:hover{
+    fill: whitesmoke;
+    background-color: #000;
+    border: 3px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
