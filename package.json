@@ -1,6 +1,9 @@
 {
   "name": "sidebar",
   "version": "1.0.0",
+  "engines": {
+    "node": "^14.x"
+  },
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.8.2",
