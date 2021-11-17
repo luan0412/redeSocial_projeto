@@ -80,7 +80,7 @@ function MineAmigos(){
             </div>
             
             <div className="linhaAmigos"></div>
-            <button className="butaoAmigos" onClick={() => history.push("/Amigos")}>Ver Mas</button>
+            <button className="butaoAmigos" onClick={() => history.push("/Amigos")}>Ver Mais</button>
             
         </div>
     );

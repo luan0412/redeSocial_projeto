@@ -28,8 +28,9 @@ export default function Login (){
 
   let history = useHistory()
     
-  function handleLogin(){
-    
+ function handleLogin(){
+   history.push ("/")
+     
   }
 
 
@@ -38,7 +39,7 @@ export default function Login (){
     <title>Login</title>
     <Header />
         <div className="boxLogin">
-            <div className="container">
+            <div className="containerLogin">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
                 </div>
