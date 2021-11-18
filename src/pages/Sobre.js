@@ -54,6 +54,15 @@ function Sobre(){
                     <a href="https://github.com/PhilipeLima123?tab=repositories" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillGithub className="sobreIcon sobreIcon2" /></a>
                     </div>
                 </div>
+                <div className="sobreImg sobreImg5">
+                    <img src={davi} />
+                    <p>Davi Gonçalves</p>
+                    <div className="boxIcon">
+                    <a href="https://www.linkedin.com/in/davi-gon%C3%A7alves-8658571ab/" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillLinkedin className="sobreIcon"/></a>
+                    <a href="https://github.com/davigoncalvesbrito" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillGithub className="sobreIcon sobreIcon2" /></a>
+                    </div>
+                    
+                </div>
             </div>
         </div>
         <Footer />
