@@ -42,7 +42,7 @@ function Amigos() {
     
 
     <div id="master">
-    <title>FREE - Amigos</title>
+    <title>Amigos</title>
      
 
       

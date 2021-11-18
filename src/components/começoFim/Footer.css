@@ -60,8 +60,16 @@
     }
 }
 
-@media (max-width: 1000px){
-    .boxFooter{
-        display: none;
+@media (max-width:500px){
+    .boxFooter .listaIcon li{
+        font-size: 10px;
+        margin-left: -10px;
+        font-weight: 300;
+    }
+    
+    .boxFooter .icon{
+        font-size: 12px;
+        margin-right: 6px;
+        bottom: -2px;
     }
 }

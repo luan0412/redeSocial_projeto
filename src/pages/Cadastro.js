@@ -46,16 +46,16 @@ function Cadastro() {
         <>
         <Header />
         <div className="Cadastre">
-        <title>FREE - Cadastro</title>
-            <div className="containerCadastro">
+        <title>Cadastro</title>
+            <div className="container">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
                 </div>
                 <div className="cadastro">
-                    <form autocomplete="off" id="formCadastro" onSubmit={handleSubmit(handleCadastro)}>
+                    <form autocomplete="off" id="form" onSubmit={handleSubmit(handleCadastro)}>
                         <h1>Nova Conta</h1>
                         <fieldset>
-                            <input type="text" name="nome" placeholder="Nome" id="nome2" {...register('nome') } />
+                            <input type="text" name="nome" placeholder="Nome" id="nome" {...register('nome') } />
                             <span>{errors.nome?.message}</span>
                         </fieldset>
                         <fieldset>    
@@ -256,16 +256,12 @@ function Cadastro() {
 
                         <h2>Gênero:</h2>
                         <fieldset>
-                            <div className="normalize">
                             <div className="field_flex">
-                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino2" value="Feminino" {...register('genero') } /></label>
-                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino2"  value="Masculino" {...register('genero') } /></label>
-                            <label  for="Outros">Outros<input type="radio" name="genero" id="neutro2" value="Outros" {...register('genero') } /></label>
-                            
+                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino" value="F eminino" {...register('genero') } /></label>
+                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino"  value="Masculino" {...register('genero') } /></label>
+                            <label  for="neutro">Outros<input type="radio" name="genero" id="neutro" value="Outros" {...register('genero') } /></label>
                             </div>
                             <span>{errors.genero?.message}</span>
-                            </div>
-                            
                         </fieldset>
                             
                         <fieldset className="field_flex">

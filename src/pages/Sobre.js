@@ -1,7 +1,7 @@
 import React from "react";
 import '../css/Sobre.css'
 
-import henthony from '../components/feed/img/henthony7.jpeg';
+import henthony from '../components/feed/img/henthony.jpeg';
 import luan from '../components/feed/img/luan.jpg';
 import bruno from '../components/feed/img/bruno.jpg';
 import davi from '../components/feed/img/davi.jpg';
@@ -16,7 +16,7 @@ import * as AiIcons from 'react-icons/ai';
 function Sobre(){
  return(
     <div>
-         <title>FREE - Sobre</title>
+         <title>Sobre</title>
          <Navbar />
          <div className="boxSobre"> 
             <h1>DEVs</h1>
