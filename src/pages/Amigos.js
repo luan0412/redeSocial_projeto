@@ -118,14 +118,14 @@ function Amigos() {
                           <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p>
                           <div id="divBotaoM"> 
                               <button id="mensagemBotao" onClick={() => setIsMensagemVisible(true)}> Escrever mensagem </button>
-                              {  isMensagemVisible === true ? 
-                                  <div>
-                                      <textarea></textarea>
-                                      <button>enviar</button>  <button onClick={() => setIsMensagemVisible(false)}>cancelar</button>
+                          </div>
+                          {  isMensagemVisible === true ? 
+                                  <div className="caixa">
+                                      <textarea id="area1"></textarea>
+                                      <button className="butt">enviar</button>  <button className="butt" onClick={() => setIsMensagemVisible(false)}>cancelar</button>
                                   </div>
                                   : ""
                               }
-                          </div>
                         </div>
                       </div>
                     </div>
