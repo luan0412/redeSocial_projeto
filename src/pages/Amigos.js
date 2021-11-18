@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import '../css/Amigos.css';
 import LocalModal from '../components/modal/localModal.js';
 import RandomUserApi from "../services/RandomUserApi";
-import '../components/modal/styles.scss'
-import iconeAmigos from "../source/iconAmigos.png"
+import '../components/modal/styles.scss';
+import iconeAmigos from "../source/iconAmigos.png";
 import Navbar from '../components/navbar/Navbar';
 
 function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [user, setUser] = useState(null)
   const [dados, setDados] = useState([]);
+  const [loading, setLoading] = useState(true)
  
 
   useEffect(() => {
@@ -18,6 +19,7 @@ function Amigos() {
 
     RandomUserApi.get(url)
       .then((response) => {
+        setLoading(false)
         if (response.status >= 200 && response.status < 300) {
           setDados(response.data.results);
         } else {
@@ -28,6 +30,12 @@ function Amigos() {
         setDados([]);
       });
   }, []);
+
+  if(loading) {
+    return (
+      <h1>Loading</h1>
+    )
+  }
 
   const setUsuarioEspecifico = (user) => {
     setIsModalVisible(true)
