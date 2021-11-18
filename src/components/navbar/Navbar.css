@@ -90,12 +90,11 @@ margin-left: 16px;
     font-family: 'Rampart One', cursive;
     font-size: 50px;
     margin-bottom: 0.5%;
-    margin-left: 38%;
     font-weight: 600;
     letter-spacing: 5px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    margin-right: 600px;
+    text-align: center;
 }
 
 .exit-icon{

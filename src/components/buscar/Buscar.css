@@ -3,6 +3,8 @@
     display: flex;
     margin-left: 10%;
     align-items: center;
+    flex-direction: column;
+    
 }
 
 .boxBusca .buscar{
@@ -34,8 +36,9 @@
     fill: #000;
 }
 
-@media (max-width: 580px){
-    .boxBusca {
-        display: none;
-    }
+.testeb{
+    display: flex;
+    flex-direction: row;
+    margin-right: 7%;
 }
+
