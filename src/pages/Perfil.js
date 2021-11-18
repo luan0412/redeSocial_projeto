@@ -8,7 +8,7 @@ export default function Perfil() {
      
         <div className="master">
             <div className="foto1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxy-4N8QPJRTHSmxretNrO4U_wGrR_ljzPvQ&usqp=CAU" alt="" />
+            <img src="https://images.pexels.com/photos/2406949/pexels-photo-2406949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
             </div>
 
             <div className="nome1">
