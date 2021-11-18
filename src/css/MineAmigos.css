@@ -128,8 +128,8 @@
     font-weight: 600;
     background:#fff;
     color:#000;
-    border: none;
     border-bottom: solid 1px #000;
+    margin-top: 25%;
     
 }
 
@@ -149,3 +149,13 @@
         display: none;
     }
     }
+
+
+
+    @media (max-width: 1024px){
+        .boxAmigos{
+          margin-left: -50%;
+          width: 78%;
+          
+        }
+        }

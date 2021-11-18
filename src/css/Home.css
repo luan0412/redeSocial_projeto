@@ -169,3 +169,12 @@ a:hover {
   position: relative;
   padding: 1%;
 }
+
+
+
+@media (max-width: 1024px){
+  .containerHome .direita {
+     width: 150%;
+     margin-left: 8%;
+  }
+}

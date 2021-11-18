@@ -15,7 +15,7 @@ body,
 
 .Cadastre{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -73,7 +73,7 @@ body,
 }
 
 #formCadastro h1{
-    color: #1c1e21;
+    color: #000;
     display: block;
     font-size: 40px;
     font-weight: 600;
@@ -89,7 +89,7 @@ body,
     display: block;
     font-size: 15px;
     font-weight: 900;
-    color: #1c1e21;
+    color: #000;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     margin: 0 auto;
     margin-bottom: 3%;
@@ -146,7 +146,7 @@ label{
 #formCadastro input[type="email"]::placeholder,
 #formCadastro input[type="password"]::placeholder{
     font: 600 15px/18px 'Roboto', sans-serif;
-    color: #1c1e21;
+    color: #000;
 }
 
 #formCadastro input[type="text"],
@@ -154,8 +154,8 @@ label{
 #formCadastro input[type="password"]{
     width: 100%;
     border: none;
-    border-bottom: 2px solid #1c1e21;
-    border-left: 2px solid #1c1e21;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0);
     margin: 0 0 2%;
@@ -166,8 +166,8 @@ label{
 #formCadastro label{
     width: 100%;
     border: none;
-    border-bottom: 2px solid #1c1e21;
-    border-left: 2px solid #1c1e21;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0);
     margin: 0 1% 2%;
@@ -181,8 +181,8 @@ label{
 #formCadastro select:hover, 
 #formCadastro label:hover{
     border: none;
-    border-bottom: 2px solid #1c1d20c4;
-    border-left: 2px solid #1c1d20d2;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
     transition: border-color 0.3s ease-in-out;  
 }
 
@@ -203,7 +203,7 @@ label{
     width: 50%;
     border-radius: 5px;
     border: none;
-    background-color: #1c1e21;
+    background-color: #000;
     color: #fff;
     margin: 0 0 5px;
     padding: 10px;
@@ -224,7 +224,7 @@ label{
     justify-content: center;
     width: 100%;
     margin-top: 3%;
-    border-top: dotted 2px #1c1e21;
+    border-top: dotted 2px #000;
     padding-top: 3%;
 }
 
@@ -354,7 +354,7 @@ label{
         justify-content: center;
         width: 100%;
         margin-top: 3%;
-        border-top: dotted 2px #1c1e21;
+        border-top: dotted 2px #000;
         padding-top: 3%;
     }
     
