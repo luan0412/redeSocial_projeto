@@ -31,9 +31,9 @@ function EditPost() {
                 <div className="post" key={key}>
         
                     <div className="post-header">
-                        <img className="avatar" src={ avata } />
+                        <img className="avatar" src="https://images.pexels.com/photos/2406949/pexels-photo-2406949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
                         <div className="details">
-                            <span>Avatar temporário</span>
+                            <span>João Lima</span>
                             <span>--:--</span>
                         </div>
                     </div>
