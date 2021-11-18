@@ -6,7 +6,7 @@ export default function Perfil() {
     return(
       <>
      
-        <div className="master">
+        <div className="masterPerfil">
             <div className="foto1">
             <img src="https://images.pexels.com/photos/2406949/pexels-photo-2406949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
             </div>

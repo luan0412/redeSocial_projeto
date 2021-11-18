@@ -184,18 +184,8 @@ textarea::placeholder{
       margin:30px;
      
   }
-  .buscar{
-    display: none;
-  }
+  
   .ico{
     display: none;
   }
 }
-
-@media (max-width: 1024px){
-  .post{
-      
-    width: 80%;
-       
-    } 
-  }
