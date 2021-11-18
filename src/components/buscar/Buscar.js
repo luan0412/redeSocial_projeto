@@ -12,7 +12,7 @@ function BarraDeBuscar() {
             let historico = JSON.parse(localStorage.getItem("amigos_free"));
             if (historico) {
                 let results =  historico.filter((item)=>{
-                    return item.name.includes(e.target.value)
+                    return item.name.first.includes(e.target.value) == true;
                 });
                 localStorage.setItem("amigos_free_filter", JSON.stringify(results)) 
             }else{

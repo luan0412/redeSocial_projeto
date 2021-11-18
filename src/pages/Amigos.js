@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../css/Amigos.css';
 import LocalModal from '../components/modal/localModal.js';
 import RandomUserApi from "../services/RandomUserApi";
-import '../components/modal/styles.scss'
+import '../components/modal/styles.scss';
+import '../components/buscar/Buscar.css';
+import * as BiIcons from 'react-icons/bi';
 
 import Navbar from '../components/navbar/Navbar';
 
@@ -10,65 +12,68 @@ function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [user, setUser] = useState(null)
   const [dados, setDados] = useState([]);
-
+  const [dadosIniciais, setDadosIniciais] = useState([]);
+  const [isMensagemVisible, setIsMensagemVisible] = useState(false);  
 
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
+    getApi();
+  }, []);
+  
+  const getApi = () =>{
     let url = "?results=54&seed=666";
 
     RandomUserApi.get(url)
       .then((response) => {
         if (response.status >= 200 && response.status < 300) {
-          setHistorico(response.data.results)
-
+          setDadosIniciais(response.data.results)
+          setDados(response.data.results);
         } else {
-          setHistorico([]);
+          setDadosIniciais([]);
+          setDados([]);
         }
       })
       .catch((error) => {
+        setDadosIniciais([]);
         setDados([]);
       });
-  }, []);
-  
-  
-  // useEffect(() => {
-  //   let historico = JSON.parse(localStorage.getItem("amigos_free_filter"));
-  //       if (historico) {
-  //         setHistorico(historico)
-  //     }else{
-  //         setHistorico(dados)
-  //     }
-  // });
-
-
-  const setHistorico = (results) =>{
-    let historico = JSON.parse(localStorage.getItem("amigos_free"));
-    if (historico) {
-      setDados(historico); 
-    } else {
-      setDados(results);
-      localStorage.setItem("amigos_free", JSON.stringify(results))
-    }
   }
 
+  const filtrar = (e) => {
+      if(e.target.value && e.target.value.length >= 3){
+         if (dadosIniciais && dadosIniciais.length > 0) {
+              let results =  dadosIniciais.filter((item)=>{
+                  return item.name.first.toLowerCase().includes(e.target.value.toLowerCase());
+              });
+             setDados(results);
+          } else{
+            setDados(dadosIniciais);
+          }
+      } else{
+          setDados(dadosIniciais);
+      }
+  }
 
   const setUsuarioEspecifico = (user) => {
     setIsModalVisible(true)
     setUser(user)
-
   }
 
   return (
 
     <>
       <Navbar />
-      <h1 id="titulo">Amigos </h1>
+      <div className="boxBusca">
+          <label for="buscar">
+              <i className="icon"><BiIcons.BiSearchAlt className="ico" /></i>
+          </label>
 
+          <input type="text" onChange={filtrar} placeholder="Filtrar por nome.." id="buscar" className="buscar" />
+      </div>
+      <h1 id="titulo">Amigos </h1>
 
       <div id="master">
         <title>Amigos</title>
-
-
 
         <div className="mainDiv">
 
@@ -97,7 +102,16 @@ function Amigos() {
                           <p id="sobrenome"> <span id="spanEdit"> Sobrenome: </span> {user.name.last}</p>
                           <p id="pais"> <span id="spanEdit"> País:</span> {user.location.country}</p>
                           <p id="usuario"> <span id="spanEdit"> Usuário: </span> {user.login.username}  </p>
-                          <div id="divBotaoM"> <button id="mensagemBotao"> Escrever mensagem </button></div>
+                          <div id="divBotaoM"> 
+                              <button id="mensagemBotao" onClick={() => setIsMensagemVisible(true)}> Escrever mensagem </button>
+                              {  isMensagemVisible === true ? 
+                                  <div>
+                                      <textarea></textarea>
+                                      <button>enviar</button>  <button onClick={() => setIsMensagemVisible(false)}>cancelar</button>
+                                  </div>
+                                  : ""
+                              }
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -29,7 +29,7 @@ function Navbar() {
           >FREE</h1>
 
         <div className="search-exit-area">
-            <BarraDeBuscar />
+            {/* <BarraDeBuscar /> */}
             <div onClick={() => history.push("/")} className="exit-icon">
               <span id="linkSair">Sair</span>
               <BsIcons.BsDoorClosed id="iconSair" />
