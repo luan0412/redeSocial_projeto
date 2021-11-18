@@ -87,7 +87,7 @@ function Amigos() {
       <h1 id="titulo">Amigos </h1>
 
       <div id="master">
-        <title>Amigos</title>
+        <title>FREE - Amigos</title>
 
         <div className="mainDiv">
 

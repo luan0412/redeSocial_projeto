@@ -46,7 +46,7 @@ export default function Login (){
 
   return (
     <>
-    <title>Login</title>
+    <title>FREE - Login</title>
     <Header />
         <div className="boxLogin">
             <div className="containerLogin">

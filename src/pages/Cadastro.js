@@ -46,7 +46,7 @@ function Cadastro() {
         <>
         <Header />
         <div className="Cadastre">
-        <title>Cadastro</title>
+        <title>FREE - Cadastro</title>
             <div className="container">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
