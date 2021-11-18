@@ -29,6 +29,10 @@ function Sobre(){
                     <a href="https://github.com/HenthonyGuilherme" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillGithub className="sobreIcon sobreIcon2" /></a>
                     </div>
                 </div>
+
+                <div className="linhaSobre"></div>
+
+
                 <div className="sobreImg sobreImg2">
                     <img src={luan} />
                     <p>Luan Felipe</p>
@@ -38,6 +42,9 @@ function Sobre(){
                     </div>
                     
                 </div>
+
+                <div className="linhaSobre"></div>
+
                 <div className="sobreImg sobreImg3">
                     <img src={bruno} />
                     <p>Bruno Amorim</p>
@@ -46,6 +53,9 @@ function Sobre(){
                     <a href="https://github.com/brnoam" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillGithub className="sobreIcon sobreIcon2" /></a>
                     </div>
                 </div>
+
+                <div className="linhaSobre"></div>
+
                 <div className="sobreImg sobreImg4">
                     <img src={philipe} />
                     <p>Philipe Lima</p>
@@ -54,6 +64,9 @@ function Sobre(){
                     <a href="https://github.com/PhilipeLima123?tab=repositories" target="_blank" rel="noopener noreferrer"><AiIcons.AiFillGithub className="sobreIcon sobreIcon2" /></a>
                     </div>
                 </div>
+
+                <div className="linhaSobre"></div>
+
                 <div className="sobreImg sobreImg5">
                     <img src={davi} />
                     <p>Davi Gonçalves</p>
