@@ -198,18 +198,13 @@ body,
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-image: url(../source/hoian.jpg);
+      
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
     }
-    .containerLogin #fundo{
-        display: none;
-    }
-    .containerLogin .video{
-        display: none;
-    }
+   
     #formLogin{
         max-width: 400px;
         width: 100%;
