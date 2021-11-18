@@ -103,14 +103,14 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     #nome,#sobrenome,#pais,#usuario{
         text-align: left;
         width: 300px;
-        
         line-height: 40px;
-        margin-left: 10%;
+        margin-left: 20%;
         color: rgb(26, 24, 24);
-        font-size: 24px
+        font-size: 24px;
     }
    
    .imagemModalDiv{
@@ -143,9 +143,9 @@ p{
         text-align: center;
         background-color: #fff;
         color: #000;
-        width: 30%;
-        height: 60%;
-        border-radius: 70px;
+        width: 50%;
+        height: 70%;
+        border-radius: 40px;
         border: solid black 4px;
         .close {
             font-size: 25px;
@@ -196,11 +196,30 @@ p{
         background-color: black;
         font-weight: 500px;
         cursor: pointer;
+        margin-left: 80px;
     }
 
     .divBotaoM{
         margin-top:20px;
-        margin-left: 200px;
+       
+    }
+
+    .caixa{
+        margin-left: 80px ;
+        margin-top: 30px;
+        
+    }
+
+    #area1{
+        width: 380px;
+        height: 200px;
+    }
+
+    .butt{
+        width: 85px;
+        height: 40px;
+        font-size: 19px;
+     
     }
 //SKELETON
 
