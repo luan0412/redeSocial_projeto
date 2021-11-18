@@ -36,7 +36,7 @@ function Cadastro() {
     
       function handleCadastro(){
    
-          history.push("/Login")
+          history.push("/")
         }
 
 
@@ -273,16 +273,16 @@ function Cadastro() {
                             
                         
                         <div id="link">
-                            <button id="botao" type="submit" onClick={() => history.push("/Login")} >Login</button>
+                            <button id="botao" type="submit" onClick={() => history.push("/")} >Login</button>
                         </div>
                        
                     </form>
                 </div>
             </div>
         
-            <Footer />
+            
         </div>
-        
+        <Footer />
         </>
         
     );
