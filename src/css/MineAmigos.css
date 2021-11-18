@@ -149,3 +149,13 @@
         display: none;
     }
     }
+
+
+
+    @media (max-width: 1024px){
+        .boxAmigos{
+          margin-left: -50%;
+          width: 78%;
+          
+        }
+        }

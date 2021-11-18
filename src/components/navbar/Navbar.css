@@ -128,12 +128,3 @@ margin-left: 16px;
    
   }
   
-@media (max-width: 745px){
-    .navbar{
-        width:110%;
-        align-items: center;
-        
-    }
-   
-  }
-  

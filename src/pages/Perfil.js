@@ -20,11 +20,11 @@ export default function Perfil() {
             </div>
 
             <div className="dados">
-                <p>Cidade: jaboatão dos Guararapes</p>
+                <p>Cidade: Jaboatão dos Guararapes</p>
             </div>
 
             <div className="dados">
-                <p>Email: JujubaFeliz@gamail.com</p>
+                <p>Email: Joaol@gmail.com</p>
             </div>
 
             <div className="nome2">
