@@ -1,10 +1,12 @@
 .boxBusca{
+    position: relative;
     display: flex;
-    margin-left: 10rem;
+    margin-left: 10%;
     align-items: center;
 }
 
 .boxBusca .buscar{
+    position: relative;
     width: 300px;
     padding: 10px 0;
     padding-left: 10px;

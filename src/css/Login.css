@@ -31,7 +31,7 @@ body,
 
 }
 
-#fundo{
+.containerLogin #fundo{
    position: absolute;
    width: 100%;
    left: 50%;
@@ -58,7 +58,6 @@ body,
    padding: 20px;
    display: flex;
    align-items: center;
-   
 }
  
 
@@ -72,19 +71,18 @@ body,
    border-radius: 20px;
    max-width: 450px;
    width: 100%;
-   height: 50vh;
- 
+   margin: 0 auto;
+   position: relative;
    
   
 }
 
 #formLogin fieldset{
    border: medium none !important;
-   margin: 0 0 20px;
+   margin: 0 0 8px;
    min-width: 100%;
    padding: 0;
    width: 100%;
-
 }
 
 #formLogin .loginFild{
@@ -206,10 +204,10 @@ body,
         background-attachment: fixed;
         background-size: cover;
     }
-    #fundo{
+    .containerLogin #fundo{
         display: none;
     }
-    .video{
+    .containerLogin .video{
         display: none;
     }
     #formLogin{
@@ -230,23 +228,5 @@ body,
     }
 }
 
-@media (min-width: 1024px){
-   #formLogin{
-       height: 58vh;
-   }
-}
 
-@media (min-width: 768px){
-   #formLogin{
-       height: 58vh;
-   }
-}
-
-
-@media (min-width: 2560px){
-   #formLogin{
-      width: 100%;
-       height: 40vh;
-   }
-}
 

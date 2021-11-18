@@ -10,10 +10,12 @@ import Navbar from '../components/navbar/Navbar';
 
 function Amigos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
   const [dados, setDados] = useState([]);
   const [dadosIniciais, setDadosIniciais] = useState([]);
-  const [isMensagemVisible, setIsMensagemVisible] = useState(false);  
+  const [isMensagemVisible, setIsMensagemVisible] = useState(false);
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     // Atualiza o titulo do documento usando a API do browser 
@@ -25,6 +27,7 @@ function Amigos() {
 
     RandomUserApi.get(url)
       .then((response) => {
+        setLoading(false)
         if (response.status >= 200 && response.status < 300) {
           setDadosIniciais(response.data.results)
           setDados(response.data.results);
@@ -52,6 +55,17 @@ function Amigos() {
       } else{
           setDados(dadosIniciais);
       }
+  }
+
+  if(loading) {
+    return (
+      <div className="loadingV2">
+        <div class="loadingio-spinner-reload-74d6u5n5slp"><div class="ldio-982pbayzbcb">
+        <div><div></div><div></div><div></div></div>
+        </div></div>
+      </div>
+
+    )
   }
 
   const setUsuarioEspecifico = (user) => {
