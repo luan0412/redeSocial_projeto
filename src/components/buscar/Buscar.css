@@ -15,6 +15,7 @@
     border: solid 2px #000;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
+    margin-left: -16%;
 }
 
 .boxBusca .buscar::placeholder{
@@ -27,7 +28,7 @@
     align-items: center;
     display: block;
     font-size: 35px;
-    margin-right: 5px;
+    margin-right: 350%;
     cursor: pointer;
 }
 
