@@ -8,7 +8,7 @@ import davi from '../components/feed/img/davi.jpg';
 import philipe from '../components/feed/img/philipe.jpg';
 
 import Navbar from '../components/navbar/Navbar';
-import Footer from '../components/começoFim/Footer';
+import Footer from '../components/comecoFim/Footer';
 
 import * as AiIcons from 'react-icons/ai';
 

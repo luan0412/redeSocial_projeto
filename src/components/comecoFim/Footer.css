@@ -47,29 +47,8 @@
     }
 }
 
-@media (max-width:1030px){
-    #li_1{
+@media (max-width:1000px){
+    .boxFooter{
         display: none;
-    }
-    #li_2{
-        display: none;
-    }
-    #li_3{
-        width: 100%;
-        position: absolute;
-    }
-}
-
-@media (max-width:500px){
-    .boxFooter .listaIcon li{
-        font-size: 10px;
-        margin-left: -10px;
-        font-weight: 300;
-    }
-    
-    .boxFooter .icon{
-        font-size: 12px;
-        margin-right: 6px;
-        bottom: -2px;
     }
 }

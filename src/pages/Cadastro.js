@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/Cadastro.css';
 import Videofull from '../source/videofull.mp4';
-import Header from '../components/começoFim/Header';
-import Footer from '../components/começoFim/Footer';
+import Header from '../components/comecoFim/Header';
+import Footer from '../components/comecoFim/Footer';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -34,28 +34,27 @@ function Cadastro() {
 
       let history = useHistory();
     
-      const handleCadastro = data => axios.post("https://start-cadastro.herokuapp.com/create", data)
-      .then(() => {
-        history.push('/')
-      }).catch(() => {
-          console.log('nao foi')
-      });
+      function handleCadastro(){
+   
+          history.push("/Login")
+        }
 
 
     return(
         <>
-        <Header />
+        
         <div className="Cadastre">
+        <Header />
         <title>FREE - Cadastro</title>
-            <div className="container">
+            <div className="containerCadastro">
                 <video id="fundo" src={Videofull} autoPlay loop muted type="video/mp4" />
                 <div className="video">
                 </div>
                 <div className="cadastro">
-                    <form autocomplete="off" id="form" onSubmit={handleSubmit(handleCadastro)}>
+                    <form autocomplete="off" id="formCadastro" onSubmit={handleSubmit(handleCadastro)}>
                         <h1>Nova Conta</h1>
                         <fieldset>
-                            <input type="text" name="nome" placeholder="Nome" id="nome" {...register('nome') } />
+                            <input type="text" name="nome" placeholder="Nome" id="nome2" {...register('nome') } />
                             <span>{errors.nome?.message}</span>
                         </fieldset>
                         <fieldset>    
@@ -256,12 +255,16 @@ function Cadastro() {
 
                         <h2>Gênero:</h2>
                         <fieldset>
+                            <div className="normalize">
                             <div className="field_flex">
-                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino" value="F eminino" {...register('genero') } /></label>
-                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino"  value="Masculino" {...register('genero') } /></label>
-                            <label  for="neutro">Outros<input type="radio" name="genero" id="neutro" value="Outros" {...register('genero') } /></label>
+                            <label  for="feminino">Feminino<input type="radio" name="genero" id="feminino2" value="Feminino" {...register('genero') } /></label>
+                            <label  for="masculino">Masculino<input type="radio" name="genero" id="masculino2"  value="Masculino" {...register('genero') } /></label>
+                            <label  for="Outros">Outros<input type="radio" name="genero" id="neutro2" value="Outros" {...register('genero') } /></label>
+                            
                             </div>
                             <span>{errors.genero?.message}</span>
+                            </div>
+                            
                         </fieldset>
                             
                         <fieldset className="field_flex">
@@ -270,16 +273,16 @@ function Cadastro() {
                             
                         
                         <div id="link">
-                            <button id="botao" type="submit" onClick={() => history.push("/")} >Login</button>
+                            <button id="botao" type="submit" onClick={() => history.push("/Login")} >Login</button>
                         </div>
                        
                     </form>
                 </div>
             </div>
         
-  
+            <Footer />
         </div>
-        <Footer />
+        
         </>
         
     );

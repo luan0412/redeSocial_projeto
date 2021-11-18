@@ -6,7 +6,7 @@ import Coment from '../components/feed/FeedComent';
 import EditPost from '../components/feed/EditPost';
 import Perfil from './Perfil';
 import MineAmigos from './MineAmigos';
-import Footer from '../components/começoFim/Footer';
+import Footer from '../components/comecoFim/Footer';
 
 
 

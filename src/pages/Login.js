@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../css/Login.css';
 import Videofull from '../source/videofull.mp4';
-import Header from '../components/começoFim/Header';
-import Footer from '../components/começoFim/Footer';
+import Header from '../components/comecoFim/Header';
+import Footer from '../components/comecoFim/Footer';
 
 
 import StartCadastroApi from '../services/StartCadastroApi';
@@ -38,7 +38,7 @@ export default function Login (){
 
   let history = useHistory()
     
-   function handleLogin(){
+  function handleLogin(){
    
   history.push("/Home")
   }
