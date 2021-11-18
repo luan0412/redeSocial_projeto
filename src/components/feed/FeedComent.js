@@ -42,7 +42,7 @@ function Coment() {
   return (
     <div className="post">
         <div className="post-header">
-            <img className="avatar" src="https://images.pexels.com/photos/2406949/pexels-photo-2406949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <img className="avatar" src="https://images.pexels.com/photos/8980695/pexels-photo-8980695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
             <div className="details">
                 <span>João Lima</span>
                 <span>{horario}</span>

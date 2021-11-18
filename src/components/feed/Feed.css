@@ -184,14 +184,6 @@ textarea::placeholder{
       margin:30px;
      
   }
- 
- 
+  
+  
 }
-
-@media (max-width: 1024px){
-  .post{
-      
-    width: 80%;
-       
-    } 
-  }
