@@ -28,11 +28,12 @@ function Navbar() {
           onClick={() => history.push("/Home")}
           >FREE</h1>
 
-          <BarraDeBuscar />
-          
-          <div onClick={() => history.push("/")} className="exit-icon">
-            <span id="linkSair">Sair</span>
-            <BsIcons.BsDoorClosed id="iconSair" />
+        <div className="search-exit-area">
+            {/* <BarraDeBuscar /> */}
+            <div onClick={() => history.push("/")} className="exit-icon">
+              <span id="linkSair">Sair</span>
+              <BsIcons.BsDoorClosed id="iconSair" />
+            </div>
           </div>
          
         </div>
