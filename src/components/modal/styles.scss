@@ -12,6 +12,7 @@ p{
     margin-top: 38px;
     margin-bottom: 35px;
     text-align: center;
+    margin-right: 12%;
   
 }
 
@@ -326,4 +327,34 @@ p{
     }
   }*/
 
-  @media (max-width: 580px){}
+  @media (max-width: 850px){
+    .mainDiv{
+      width: 100px;
+      margin: 30px;
+    }
+
+    .navbar{
+      width:100%;
+      align-items: center;
+  }
+
+  #linkSair{
+    display: none;
+  }
+
+  #iconSair{
+    display: none;
+  }
+  .boxBusca{
+   
+  }
+    
+  }
+  
+  @media (max-width: 580px){
+    #form{
+        max-width: 350px;
+        height: 70%;
+        width: 100%;
+    }
+  }

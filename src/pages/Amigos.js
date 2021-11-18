@@ -77,14 +77,21 @@ function Amigos() {
 
     <>
       <Navbar />
+    
+      
+
       <div className="boxBusca">
-          <label for="buscar">
+
+      <h1 id="titulo">Amigos </h1>
+      <div className="testeb">
+      <label for="buscar">
               <i className="icon"><BiIcons.BiSearchAlt className="ico" /></i>
           </label>
 
           <input type="text" onChange={filtrar} placeholder="Filtrar por nome.." id="buscar" className="buscar" />
       </div>
-      <h1 id="titulo">Amigos </h1>
+         
+      </div>
 
       <div id="master">
         <title>FREE - Amigos</title>
